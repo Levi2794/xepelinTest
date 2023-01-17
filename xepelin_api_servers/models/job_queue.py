@@ -9,6 +9,7 @@ from odoo.exceptions import ValidationError
 _logger = logging.getLogger(__name__)
 
 
+
 class JobQueue(models.Model):
     _name = 'xepelin.job.queue'
     _description = 'Xepelin Job Queue'
