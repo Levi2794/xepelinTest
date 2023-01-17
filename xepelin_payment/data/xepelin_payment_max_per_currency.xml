@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="MXN" model="xepelin.payment.max.per.currency">
+        <field name="currency_id" ref="base.MXN"/>
+        <field name="amount">90000</field>
+    </record>
+    <record id="CLP" model="xepelin.payment.max.per.currency">
+        <field name="currency_id" ref="base.CLP"/>
+        <field name="amount">900000</field>
+    </record>
+    <record id="USD" model="xepelin.payment.max.per.currency">
+        <field name="currency_id" ref="base.USD"/>
+        <field name="amount">50000</field>
+    </record>
+</odoo>

@@ -1,0 +1,1413 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* xepelin_bank_statement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-11 00:26+0000\n"
+"PO-Revision-Date: 2022-11-11 00:26+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">Back Office</span>"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">Server Global API</span>"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.res_config_settings_view_form
+msgid "API Connections"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard__account
+msgid "Account"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__accounting_date
+msgid "Accounting Date"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_view_search
+msgid "Accounting date"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__message_needaction
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_needaction
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_needaction
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__message_needaction
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__message_needaction
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__activation_date
+msgid "Activation date"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__activity_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__activity_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__activity_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__activity_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__activity_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__activity_exception_decoration
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__activity_exception_decoration
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__activity_exception_decoration
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__activity_exception_decoration
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__activity_exception_decoration
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__activity_state
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__activity_state
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__activity_state
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__activity_state
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__activity_state
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__activity_type_icon
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__activity_type_icon
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__activity_type_icon
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__activity_type_icon
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__activity_type_icon
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__address
+msgid "Address"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__advance_payment
+msgid "Advance payment"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__amount
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__amount
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__amount
+msgid "Amount"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement.py:0
+#, python-format
+msgid "An invoice was found that matches the data for the movement %s"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__area
+msgid "Area"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__message_attachment_count
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_attachment_count
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_attachment_count
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__message_attachment_count
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__message_attachment_count
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_invoice_view_form
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_invoice_view_tree
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_order_view_form
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_order_view_tree
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_view_form
+msgid "BO"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__bo_id
+msgid "BO ID"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement.py:0
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement_invoice.py:0
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement_order.py:0
+#, python-format
+msgid "BO Order"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_res_config_settings__back_office_url
+msgid "Back Office URL"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.res_config_settings_view_form
+msgid "Bank Statement"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.actions.act_window,name:xepelin_bank_statement.xepelin_bank_statement_action
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__bank_statement_id
+msgid "Bank statement"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model,name:xepelin_bank_statement.model_xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__bank_statement_ids
+#: model:ir.ui.menu,name:xepelin_bank_statement.xepelin_bank_statement_menu
+#: model:ir.ui.menu,name:xepelin_bank_statement.xepelin_bank_statement_menu_root
+msgid "Bank statements"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__base_rate
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__base_rate
+msgid "Base rate"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__billing_company_rut
+msgid "Billing company RUT"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__billing_company_business_name
+msgid "Billing company business name"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__business_id
+msgid "Business ID"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__business_country_id
+msgid "Business country id"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__business_id
+msgid "Business id"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__business_identifier
+msgid "Business identifier"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__business_name
+msgid "Business name"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__reconcile
+msgid "Can reconcile?"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.import_bank_statement_form_wizard
+msgid "Cancel"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields.selection,name:xepelin_bank_statement.selection__xepelin_bank_statement__type__charge
+msgid "Charge"
+msgstr "Cargo"
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__city
+msgid "City"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__client_number
+msgid "Client number"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__color
+msgid "Color"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__comment_transfer
+msgid "Comment transfer"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__commerce_rut
+msgid "Commerce RUT"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__commerce_name
+msgid "Commerce name"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__commune
+msgid "Commune"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__company_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__company_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__company_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__company_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__company_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__company_id
+msgid "Company"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__company_rut
+msgid "Company RUT"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__company
+msgid "Company name"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model,name:xepelin_bank_statement.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__count_invoices
+msgid "Count invoices"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.actions.act_window,help:xepelin_bank_statement.xepelin_bank_statement_type_action
+msgid "Create a Payment type"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.actions.act_window,help:xepelin_bank_statement.xepelin_bank_statement_action
+msgid "Create a bank statement"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.actions.act_window,help:xepelin_bank_statement.xepelin_bank_statement_invoice_action
+msgid "Create an invoice"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.actions.act_window,help:xepelin_bank_statement.xepelin_bank_statement_order_action
+msgid "Create an order"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__created_at
+msgid "Created at"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard__create_uid
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__create_uid
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__create_uid
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__create_uid
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__create_uid
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__create_uid
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard__create_date
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__create_date
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__create_date
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__create_date
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__create_date
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__create_date
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__currency_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__currency_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__currency_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard__date
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__date
+msgid "Date"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_invoice_view_form
+msgid "Debt"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__debt_base_rate
+msgid "Debt Base rate"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__debt_date
+msgid "Debt date"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__debt_interest_at_date
+msgid "Debt interest at date"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__default_date
+msgid "Default date"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__description
+msgid "Description"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_order_view_form
+msgid "Details"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__discount_ids
+msgid "Discounts"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard__display_name
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__display_name
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__display_name
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__display_name
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__display_name
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__display_name
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__document_number
+msgid "Document number"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields.selection,name:xepelin_bank_statement.selection__xepelin_bank_statement__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__email
+msgid "Email"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: code:addons/xepelin_bank_statement/wizards/import_bank_statement.py:0
+#, python-format
+msgid ""
+"Error\n"
+"%s"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__expiration_date
+msgid "Expiration date"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__external_id
+msgid "Ext id"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard__template
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__file
+msgid "File"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard__name
+msgid "File Name"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__file_name
+msgid "File name"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__filename
+msgid "Filename"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__final_amount
+msgid "Final amount"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__folio
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__folio
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__name
+msgid "Folio"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__message_follower_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_follower_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_follower_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__message_follower_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__message_follower_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__message_partner_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_partner_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_partner_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__message_partner_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__message_partner_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement__activity_type_icon
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_discount__activity_type_icon
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_invoice__activity_type_icon
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_order__activity_type_icon
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_type__activity_type_icon
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__gloss_detail
+msgid "Gloss detail"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_order_view_search
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_view_search
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statementt_invoice_view_search
+msgid "Group By"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__has_message
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__has_message
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__has_message
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__has_message
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__has_message
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard__id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__id
+msgid "ID"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__id_number
+msgid "ID number"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__activity_exception_icon
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__activity_exception_icon
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__activity_exception_icon
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__activity_exception_icon
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__activity_exception_icon
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement__activity_exception_icon
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_discount__activity_exception_icon
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_invoice__activity_exception_icon
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_order__activity_exception_icon
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_type__activity_exception_icon
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__identifier
+msgid "Identifier"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement__message_needaction
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement__message_unread
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_needaction
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_unread
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_needaction
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_unread
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_order__message_needaction
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_order__message_unread
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_type__message_needaction
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_type__message_unread
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_needaction
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement__message_has_error
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement__message_has_sms_error
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_has_error
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_has_sms_error
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_has_error
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_has_sms_error
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_order__message_has_error
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_order__message_has_sms_error
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_type__message_has_error
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_type__message_has_sms_error
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_has_error
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: xepelin_bank_statement
+#. openerp-web
+#: code:addons/xepelin_bank_statement/static/src/xml/import_tree_button.xml:0
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.import_bank_statement_form_wizard
+#, python-format
+msgid "Import"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard__imported
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__imported
+msgid "Imported"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement.py:0
+#, python-format
+msgid "Imported!"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__interest
+msgid "Interest"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__internal_gloss
+msgid "Internal gloss"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_invoice_view_form
+msgid "Invoice"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__invoice_id
+msgid "Invoice Id"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__invoice_created_at
+msgid "Invoice created at"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__invoice_score
+msgid "Invoice score"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__invoice_type
+msgid "Invoice type"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__invoice_updated_at
+msgid "Invoice updated at"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.actions.act_window,name:xepelin_bank_statement.xepelin_bank_statement_invoice_action
+#: model:ir.model,name:xepelin_bank_statement.model_xepelin_bank_statement_invoice
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__invoice_ids
+#: model:ir.ui.menu,name:xepelin_bank_statement.xepelin_bank_statement_invoice_menu_action
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_invoice_view_tree
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_order_view_form
+msgid "Invoices"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement.py:0
+#, python-format
+msgid "Invoices not found for the movement %s"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__message_is_follower
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_is_follower
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_is_follower
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__message_is_follower
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__message_is_follower
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__issue_date
+msgid "Issue date"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__issued_date
+msgid "Issued date"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__last_four_digits_card
+msgid "Last 4 digits card"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard____last_update
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement____last_update
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount____last_update
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice____last_update
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order____last_update
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type____last_update
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard__write_uid
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__write_uid
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__write_uid
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__write_uid
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__write_uid
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__write_uid
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard__write_date
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__write_date
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__write_date
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__write_date
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__write_date
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__write_date
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__latest_score_update
+msgid "Latest score update"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: code:addons/xepelin_bank_statement/wizards/import_bank_statement.py:0
+#, python-format
+msgid ""
+"Line: %s - An error occurred:\n"
+"%s"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__message_main_attachment_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_main_attachment_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_main_attachment_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__message_main_attachment_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__message_main_attachment_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__message_has_error
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_has_error
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_has_error
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__message_has_error
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__message_has_error
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__message_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__message_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__message_ids
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__movement
+msgid "Movement"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__movement_type
+#: model:ir.ui.menu,name:xepelin_bank_statement.xepelin_bank_statement_type_menu_action
+msgid "Movement type"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.ui.menu,name:xepelin_bank_statement.xepelin_bank_statement_menu_action
+msgid "Movements"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__my_activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__my_activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__my_activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__my_activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__my_activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__name
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__name
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__name
+msgid "Name"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement.py:0
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement.py:0
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement.py:0
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement.py:0
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement_invoice.py:0
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement_invoice.py:0
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement_invoice.py:0
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement_invoice.py:0
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement_order.py:0
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement_order.py:0
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement_order.py:0
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement_order.py:0
+#, python-format
+msgid "New"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__activity_summary
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__activity_summary
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__activity_summary
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__activity_summary
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__activity_summary
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__activity_type_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__activity_type_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__activity_type_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__activity_type_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__activity_type_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__not_apply_credit_notes
+msgid "Not apply credit notes"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__number
+msgid "Number"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__message_needaction_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_needaction_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_needaction_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__message_needaction_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__message_needaction_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__message_has_error_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_has_error_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_has_error_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__message_has_error_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__message_has_error_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement__message_needaction_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_needaction_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_needaction_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_order__message_needaction_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_type__message_needaction_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement__message_has_error_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_has_error_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_has_error_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_order__message_has_error_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_type__message_has_error_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement__message_unread_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_unread_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_unread_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_order__message_unread_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_type__message_unread_counter
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__office
+msgid "Office"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard__omitted
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__omitted
+msgid "Omitted"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__operation_cost
+msgid "Operation cost"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__operation_number
+msgid "Operation number"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model,name:xepelin_bank_statement.model_xepelin_bank_statement_order
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__order_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__order_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__order_id
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_order_view_form
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statementt_invoice_view_search
+msgid "Order"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model,name:xepelin_bank_statement.model_xepelin_bank_statement_discount
+msgid "Order Discounts"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__order_number
+msgid "Order number"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.actions.act_window,name:xepelin_bank_statement.xepelin_bank_statement_order_action
+#: model:ir.ui.menu,name:xepelin_bank_statement.xepelin_bank_statement_order_menu
+#: model:ir.ui.menu,name:xepelin_bank_statement.xepelin_bank_statement_order_menu_action
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_order_view_tree
+msgid "Orders"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__origin_rut
+msgid "Origin RUT"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__origin_account_number
+msgid "Origin account number"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__origin_account_type
+msgid "Origin account type"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__origin_bank
+msgid "Origin bank"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__origin_name
+msgid "Origin name"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__payed_interests
+msgid "Payed interests"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__payer_debt_fd
+msgid "Payer debt FD"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__invoice_stake_holder_identifier
+msgid "Payer identifier"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields.selection,name:xepelin_bank_statement.selection__xepelin_bank_statement__type__payment
+msgid "Payment"
+msgstr "Abono"
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__payment_type_ids
+msgid "Payment Type"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__payment_confirmed
+msgid "Payment confirmed"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__payment_date
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__payment_date
+msgid "Payment date"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__payment_type_description
+msgid "Payment taype description"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.actions.act_window,name:xepelin_bank_statement.xepelin_bank_statement_type_action
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_type_view_tree
+msgid "Payment type"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model,name:xepelin_bank_statement.model_xepelin_bank_statement_type
+msgid "Payment types"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__payroll_name
+msgid "Payroll name"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__purchase_type
+msgid "Purchase type"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__reason
+msgid "Reason"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__recipient_rut
+msgid "Recipient RUT"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__recipient_account
+msgid "Recipient account"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__recipient_account_type
+msgid "Recipient account type"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__recipient_bank
+msgid "Recipient bank"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__recipient_email
+msgid "Recipient email"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__recipient_name
+msgid "Recipient name"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_order_view_form
+msgid "Reconcile"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields.selection,name:xepelin_bank_statement.selection__xepelin_bank_statement__state__reconciled
+#: model:ir.model.fields.selection,name:xepelin_bank_statement.selection__xepelin_bank_statement_invoice__state__reconciled
+#: model:ir.model.fields.selection,name:xepelin_bank_statement.selection__xepelin_bank_statement_order__state__reconciled
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_invoice_view_form
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_order_view_form
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_order_view_search
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_view_form
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statementt_invoice_view_search
+msgid "Reconciled"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__rejection_reason
+msgid "Rejection reason"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__activity_user_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__activity_user_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__activity_user_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__activity_user_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__activity_user_id
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__retention
+msgid "Retention"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__retention_pct
+msgid "Retention PCT"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__message_has_sms_error
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_has_sms_error
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_has_sms_error
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__message_has_sms_error
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__message_has_sms_error
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__score
+msgid "Score"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_view_form
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_view_tree
+msgid "Search"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__segment
+msgid "Segment"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement.py:0
+#, python-format
+msgid "Serve global error: %s"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_res_config_settings__server_global_token
+msgid "Server Global Token"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_res_config_settings__server_global_url
+msgid "Server Global URL"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__service
+msgid "Service"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.actions.act_window,name:xepelin_bank_statement.xepelin_bank_statement_res_config_settings_menu_action
+#: model:ir.ui.menu,name:xepelin_bank_statement.xepelin_bank_statement_settings_menu
+msgid "Settings"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement.py:0
+#, python-format
+msgid "Setup connection to Server Global"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__source
+msgid "Source"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard__state
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__state
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__state
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_order_view_search
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statementt_invoice_view_search
+msgid "State"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__state
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__status
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__status
+msgid "Status"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement__activity_state
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_discount__activity_state
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_invoice__activity_state
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_order__activity_state
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_type__activity_state
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__tax_service
+msgid "Tax service"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: code:addons/xepelin_bank_statement/models/xepelin_bank_statement.py:0
+#, python-format
+msgid ""
+"There is already a movement with the same transaction date, accounting date,"
+" amount, operation number and type"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__total_reconcile
+#: model:ir.model.fields.selection,name:xepelin_bank_statement.selection__xepelin_bank_statement__state__to_reconcile
+#: model:ir.model.fields.selection,name:xepelin_bank_statement.selection__xepelin_bank_statement_invoice__state__to_reconcile
+#: model:ir.model.fields.selection,name:xepelin_bank_statement.selection__xepelin_bank_statement_order__state__to_reconcile
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_order_view_search
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statementt_invoice_view_search
+msgid "To reconcile"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__today_difference_days
+msgid "Today difference days"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.res_config_settings_view_form
+msgid "Token"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_import_bank_statement_wizard__total
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__total
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_invoice_view_tree
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_view_tree
+msgid "Total"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__total_capital_debt
+msgid "Total capital debt"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__total_debt
+msgid "Total debt"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__total_invoices
+msgid "Total invoices"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__total_movements
+msgid "Total movements"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__total_partial_days
+msgid "Total partial days"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__transaction_date
+msgid "Transaction Date"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__transaction_code
+msgid "Transaction code"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_view_search
+msgid "Transaction date"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__transfer
+msgid "Transfer"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__transfer_code
+msgid "Transfer code"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__type
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_view_search
+msgid "Type"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement__activity_exception_decoration
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_discount__activity_exception_decoration
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_invoice__activity_exception_decoration
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_order__activity_exception_decoration
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_type__activity_exception_decoration
+#: model:ir.model.fields,help:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.res_config_settings_view_form
+msgid "URL"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_order_view_form
+msgid "Undo"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__message_unread
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_unread
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_unread
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__message_unread
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__message_unread
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__message_unread_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_discount__message_unread_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__message_unread_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_order__message_unread_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_type__message_unread_counter
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_upload_history__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__updated_at
+msgid "Updated at"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.actions.act_window,name:xepelin_bank_statement.xepelin_bank_statement_upload_history_action
+#: model:ir.ui.menu,name:xepelin_bank_statement.xepelin_bank_statement_upload_history_menu_action
+#: model_terms:ir.ui.view,arch_db:xepelin_bank_statement.xepelin_bank_statement_upload_history_view_tree
+msgid "Upload History"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement__upload_date
+msgid "Upload date"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model,name:xepelin_bank_statement.model_xepelin_bank_statement_upload_history
+#: model_terms:ir.actions.act_window,help:xepelin_bank_statement.xepelin_bank_statement_upload_history_action
+msgid "Upload history"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields,field_description:xepelin_bank_statement.field_xepelin_bank_statement_invoice__verification_status
+msgid "Verification status"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model,name:xepelin_bank_statement.model_import_bank_statement_wizard
+msgid "Wizard to import bank statements"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields.selection,name:xepelin_bank_statement.selection__import_bank_statement_wizard__state__upload
+msgid "upload"
+msgstr ""
+
+#. module: xepelin_bank_statement
+#: model:ir.model.fields.selection,name:xepelin_bank_statement.selection__import_bank_statement_wizard__state__uploaded
+msgid "uploaded"
+msgstr ""

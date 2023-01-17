@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="xepelin_global_menu"
+        name="Xepelin Global"
+        parent="base.menu_administration"
+        sequence="5"/>
+
+    <menuitem
+        id="xepelin_server_global_menu"
+        name="Server Global"
+        parent="xepelin_global_menu"
+        action="xepelin_server_global_action"/>
+
+    <menuitem
+        id="xepelin_job_queue_menu"
+        name="Job Queue"
+        parent="xepelin_global_menu"
+        action="xepelin_job_queue_action"/>
+
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <record id="search_rfc_wizard" model="ir.ui.view">
+        <field name="name">Search RFC</field>
+        <field name="model">search.rfc.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="search_name" required="1"/>
+                    <field name="partner_id" readonly="1" options="{'no_open':true}"/>
+                </group>
+                <footer>
+                    <button name="action_search" string="Search RFC" type="object" class="oe_highlight" />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- xepelin.movement.cfdi form view -->
+    <record id="xepelin_movement_cfdi_view_form" model="ir.ui.view">
+        <field name="name">xepelin.movement.cfdi.form</field>
+        <field name="model">xepelin.movement.cfdi</field>
+        <field name="arch" type="xml">
+            <form string="CFDI" create="0">
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="pending_merge,merged"/>
+                    <!-- <button name="action_merge" type="object" string="Merge RSM" class='btn-primary oe_read_only' attrs="{'invisible': [('rsm_id', '=', False)]}"/> -->
+                </header>
+                <sheet>
+                    <field name="currency_id" invisible="1"/>
+                    <div class="oe_title oe_inline">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group col="4">
+                        <field name="rsm_id" attrs="{'readonly':[('rsm_id', '=', True)]}" options="{'no_create': True, 'no_create_edit':True}"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- xepelin.movement.cfdi tree view -->
+    <record id="xepelin_movement_cfdi_view_tree" model="ir.ui.view">
+        <field name="name">xepelin.movement.cfdi.tree</field>
+        <field name="model">xepelin.movement.cfdi</field>
+        <field name="arch" type="xml">
+            <tree js_class="import_source_movement_button" import="0" default_order="date desc">
+                <field name="name"/>
+                <field name="currency_id" invisible="1"/>
+                <field name="rsm_id" optional="hide"/>
+                <field name="date"/>
+                <field name="currency_id" invisible="1"/>
+                <field name="amount" sum="Total" widget="monetary"/>
+                <field name="operation_folio_number"/>
+                <field name="account_movement"/>
+                <field name="payer_bank_tax_id"/>
+                <field name="payer_bank"/>
+                <field name="payer_tax_id"/>
+                <field name="payer_name"/>
+                <field name="payer_clabe_account"/>
+                <field name="beneficiary_bank_tax_id"/>
+                <field name="beneficiary_clabe_account"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <!-- xepelin.movement.cfdi search view -->
+    <record id="xepelin_movement_cfdi_view_search" model="ir.ui.view">
+        <field name="name">xepelin.movement.cfdi.search</field>
+        <field name="model">xepelin.movement.cfdi</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="rsm_id"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- xepelin.movement.cfdi Action Window -->
+    <record id="xepelin_movement_cfdi_action" model="ir.actions.act_window">
+        <field name="name">Historical SPEI (CFDI)</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelin.movement.cfdi</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create a CFDI
+            </p>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-extend="ListView.buttons" t-name="import_bank_statement.buttons">
+        <t t-jquery="button.o_list_button_add" t-operation="after">
+            <t t-if="widget.modelName == 'xepelin.bank.bci' or widget.modelName == 'xepelin.bank.santander'">
+                <button type="button" class="btn btn-primary import_bank_statement_wizard ml-1">
+                    Import
+                </button>
+            </t>
+        </t>
+    </t>
+</templates>

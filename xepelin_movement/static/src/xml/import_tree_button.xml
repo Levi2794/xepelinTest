@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-extend="ListView.buttons" t-name="import_source_movement.buttons">
+        <t t-jquery="button.o_list_button_add" t-operation="after">
+            <t t-if="widget.modelName == 'xepelin.movement.rsm' or widget.modelName == 'xepelin.movement.spei' or widget.modelName == 'xepelin.movement.cfdi' or widget.modelName == 'xepelin.movement.bnc'">
+                <button type="button" class="btn btn-primary import_source_movement_wizard ml-1">
+                    Import
+                </button>
+            </t>
+        </t>
+    </t>
+</templates>

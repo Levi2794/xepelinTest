@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <!-- movement.invoice tree view -->
+    <record id="xepelin_movement_invoice_view_form" model="ir.ui.view">
+        <field name="name">xepelin.movement.invoice.form</field>
+        <field name="model">xepelin.movement.invoice</field>
+        <field name="arch" type="xml">
+            <form string="Invoice" create="false">
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="to_reconcile,reconciled"/>
+                </header>
+                <sheet>
+                    <field name="company_id" invisible="1"/>
+                    <field name="currency_id" invisible="1"/>
+                    <widget name="web_ribbon" title="Reconciled" attrs="{'invisible': [('state', '!=', 'reconciled')]}"/>
+                    <div class="oe_title oe_inline">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="folio"/>
+                            <field name="order_id" options="{'no_create': True, 'no_create_edit':True}" readonly="1"/>
+                            <label for="order_number"/>
+                            <div class="o_row">
+                                <field name="order_number" readonly="1" style="font-weight:bold;position"/>
+                                <button name="bo_order_link" icon="fa-eye" type="object" string="BO" attrs="{'invisible': [('order_id', '=', False)]}"/>
+                            </div>
+                            <field name="identifier"/>
+                            <field name="issue_date"/>
+                            <field name="expiration_date"/>
+                            <field name="invoice_stake_holder_identifier"/>
+                            <field name="amount" widget="monetary"/>
+                        </group>
+                        <group>
+                            <field name="movement_id" attrs="{'readonly': [('state', '=', 'reconciled')]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="debt" string="Debt">
+                            <group name="debt" string="Debt">
+                                <field name="payed_interests"/>
+                                <field name="total_capital_debt"/>
+                                <field name="debt_interest_at_date"/>
+                                <field name="total_debt"/>
+                                <field name="today_difference_days"/>
+                                <field name="debt_base_rate"/>
+                                <field name="segment"/>
+                                <field name="total_partial_days"/>
+                                <field name="payer_debt_fd"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- movement.invoice tree view -->
+    <record id="xepelin_movement_invoice_view_tree" model="ir.ui.view">
+        <field name="name">xepelin.movement.invoice.view.tree</field>
+        <field name="model">xepelin.movement.invoice</field>
+        <field name="arch" type="xml">
+            <tree string="Invoices" create="false">
+                <field name="company_id" invisible="1"/>
+                <field name="currency_id" invisible="1"/>
+                <field name="name"/>
+                <field name="folio"/>
+                <field name="order_id"/>
+                <field name="order_number" decoration-bf="1"/>
+                <button name="bo_order_link" icon="fa-eye" type="object" string="BO" attrs="{'invisible': [('order_id', '=', False)]}"/>
+                <field name="identifier"/>
+                <field name="issue_date"/>
+                <field name="expiration_date"/>
+                <field name="invoice_stake_holder_identifier"/>
+                <field name="amount" sum="Total" widget="monetary"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- xepelin.movement.invoice search view -->
+    <record id="xepelin_movement_invoice_view_search" model="ir.ui.view">
+        <field name="name">xepelin.movement.invoice.search</field>
+        <field name="model">xepelin.movement.invoice</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="folio"/>
+                <field name="identifier"/>
+                <filter string="To reconcile" name="to_reconcile" domain="[('state', '=', 'to_reconcile')]"/>
+                <filter string="Reconciled" name="reconciled" domain="[('state', '=', 'reconciled')]"/>
+                <group expand="1" string="Group By">
+                    <filter string="State" name="state_group" context="{'group_by': 'state'}"/>
+                    <filter string="Order" name="order_group" context="{'group_by': 'order_id'}"/>
+                    <filter string="expiration_date" name="expiration_date_group" context="{'group_by': 'expiration_date'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="xepelin_movement_invoice_action" model="ir.actions.act_window">
+        <field name="name">Invoices</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelin.movement.invoice</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="context">{'search_default_state_group': 1}</field> -->
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                    Create an invoice
+            </p>
+        </field>
+    </record>
+</odoo>

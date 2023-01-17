@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- BBVA MX -->
+        <record id="xepelin_bbva_mx_502594" model="res.partner.bank">
+            <field name="acc_number">00012180001170502594</field>
+            <field name="partner_id" ref="base.main_partner"/>
+            <field name="bank_id" ref="l10n_mx.acc_bank_012_BBVA_BANCOMER"/>
+        </record>
+
+    </data>
+</odoo>

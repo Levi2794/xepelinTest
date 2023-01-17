@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="xepelin_order_menu_root"
+        name="Orders"
+        web_icon="xepelin_order,static/description/web_icon.png"
+        sequence="0"/>
+
+    <menuitem
+        id="xepelin_order_menu"
+        name="Orders"
+        parent="xepelin_order_menu_root"
+        action="xepelin_order_action"
+        sequence="0"/>
+
+    <menuitem
+        id="xepelin_order_discount_menu"
+        name="Discounts"
+        parent="xepelin_order_menu_root"
+        action="xepelin_order_discount_action"
+        sequence="2"/>
+
+</odoo>

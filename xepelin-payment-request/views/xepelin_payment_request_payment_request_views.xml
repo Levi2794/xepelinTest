@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- xepelin_payment_request.payment_request form view -->
+    <record id="xepelin_payment_request_payment_request_view_form" model="ir.ui.view">
+        <field name="name">xepelin_payment_request.payment_request.form</field>
+        <field name="model">xepelinpaymentrequest.paymentrequest</field>
+        <field name="arch" type="xml">
+            <form string="Payment requests">
+                <header>
+                    <button name="paid_payment_request" string="Paid" type="object" class="oe_highlight" attrs="{'invisible': [('is_payer_group', '=', False)]}"/>
+                    <button name="approve_payment_request" string="Approve" type="object" class="oe_highlight" attrs="{'invisible': [('is_group_approver', '=', False)]}"/>
+                    <button name="reject_payment_request" string="Reject" type="object" class="oe_highlight" attrs="{'invisible': [('is_group_approver', '=', False)]}"/>
+                    <field name="state" widget="statusbar" statusbar_visible="rejected,approved,waiting_budget_approval,waiting_accounting_approval,waiting_treasury_approval"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="beneficiary_name"/>
+                        <field name="bank_name"/>
+                        <field name="bank_city"/>
+                        <field name="bank_state"/>
+                        <field name="bank_country"/>
+                        <field name="aba_swift"/>
+                        <field name="document_description"/>
+                        <field name="beneficiary_account_number"/>
+                        <field name="beneficiary_account_alias"/>
+                        <field name="beneficiary_identifier"/>
+                        <field name="beneficiary_address"/>
+                        <field name="reference"/>
+                        <field name="concept"/>
+                        <field name="subtotal_amount">0</field>
+                        <field name="tax_iva_amount">0</field>
+                        <field name="rent_tax_iva_amount">0</field>
+                        <field name="rent_tax_isr_amount">0</field>
+                        <field name="total_amount">0</field>
+                        <field name="currency_id"/>
+                        <field name="country_id"/>
+                        <field name="exchange_rate_usd">0</field>
+                        <field name="total_amount_usd">0</field>
+                        <field name="distribution_funds"/>
+                        <field name="rights_other_contributions"/>
+                        <field name="is_group_approver" invisible="1"/>
+                        <field name="is_payer_group" invisible="1"/>
+                        <field name="area"/>
+                        <field name="invoice_link" widget="url"/>
+                        <field name="invoice_date"/>
+                        <field name="comment"/>
+                        <field name="creation_date"/>
+                        <field name="requesting_user"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="xepelin_payment_request_payment_request_search" model="ir.ui.view">
+        <field name="name">xepelin_payment_request.payment_request.search</field>
+        <field name="model">xepelinpaymentrequest.paymentrequest</field>
+        <field name="arch" type="xml">
+            <search string="Payment requests">
+                <filter string="Rejected request" name="rejected_request" domain="[('state','=', 'rejected')]" help="Rejected requests"/>
+                <filter string="Approved request" name="approved_request" domain="[('state','=', 'approved')]" help="Approved requests"/>
+                <filter string="Paid request" name="paid_request" domain="[('state','=', 'paid')]" help="Paid requests"/>
+                <filter string="Awaiting requests" name="awaiting_request" domain="[('state','in', ('waiting_budget_approval','waiting_accounting_approval', 'waiting_treasury_approval'))]" help="Awaiting requests"/>
+                <filter string="Date" name="filter_creation_date" date="creation_date"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="xepelin_payment_request_payment_request_view_tree" model="ir.ui.view">
+        <field name="name">xepelin_payment_request.payment_request.tree</field>
+        <field name="model">xepelinpaymentrequest.paymentrequest</field>
+        <field name="arch" type="xml">
+            <tree string="Payment requests">
+                <!--header>
+                    <button name="download_file" string="Crear pagos" type="object" class="oe_highlight"/>
+                </header-->
+                <field name="beneficiary_name"/>
+                <field name="concept"/>
+                <field name="country_id"/>
+                <field name="total_amount"/>
+                <field name="currency_id"/>
+                <field name="state"/> 
+                <field name="area"/>
+                <field name="requesting_user"/>
+                <field name="invoice_date"/>
+                <field name="creation_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- movement.movement Action Window -->
+    <record id="xepelin_payment_request_xepelin_payment_request_action" model="ir.actions.act_window">
+        <field name="name">Payment Requests</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelinpaymentrequest.paymentrequest</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create a payment request
+            </p>
+        </field>
+    </record>
+
+    <record model="ir.actions.server" id="action_download_file">
+       <field name="name">Crear pagos</field>
+       <field name="model_id" ref="model_xepelinpaymentrequest_paymentrequest"/>
+       <field name="binding_model_id" ref="model_xepelinpaymentrequest_paymentrequest"/>
+       <field name="state">code</field>
+       <field name="code">
+           action = records.download_file()
+       </field>
+   </record>
+</odoo>

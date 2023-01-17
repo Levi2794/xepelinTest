@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menu app -->
+    <menuitem
+        id="xepelin_bank_statement_menu_root"
+        name="Bank statements"
+        web_icon="xepelin_bank_statement,static/description/icon.png"
+        sequence="0"/>
+
+    <!-- Menu top-->
+    <menuitem
+        id="xepelin_bank_statement_menu"
+        name="Bank statements"
+        parent="xepelin_bank_statement.xepelin_bank_statement_menu_root"
+        sequence="0"/>
+
+    <!-- Menu action -->
+    <menuitem
+        id="xepelin_bank_bci_menu_action"
+        name="BCI Bank"
+        parent="xepelin_bank_statement.xepelin_bank_statement_menu"
+        action="xepelin_bank_bci_action"
+        sequence="0"/>
+
+    <!-- Menu action -->
+    <menuitem
+        id="xepelin_bank_santander_menu_action"
+        name="Santander Bank"
+        parent="xepelin_bank_statement.xepelin_bank_statement_menu"
+        action="xepelin_bank_santander_action"
+        sequence="1"/>
+
+    <!-- Settings-->
+    <!-- menu top -->
+    <menuitem
+    id="xepelin_bank_statement_settings_menu"
+    name="Settings"
+    parent="xepelin_bank_statement.xepelin_bank_statement_menu_root"
+    sequence="2"/>
+
+    <!-- Menu action -->
+    <menuitem
+    id="xepelin_bank_statement_upload_history_menu_action"
+    name="Upload History"
+    parent="xepelin_bank_statement.xepelin_bank_statement_settings_menu"
+    action="xepelin_bank_statement_upload_history_action"
+    sequence="2"/>
+
+    <!-- Menu action -->
+    <menuitem
+    id="xepelin_bank_statement_type_menu_action"
+    name="Movement type"
+    parent="xepelin_bank_statement.xepelin_bank_statement_settings_menu"
+    action="xepelin_bank_statement_type_action"
+    sequence="2"/>
+    <!-- Order -->
+    <!-- menu top -->
+    <menuitem
+        id="xepelin_bank_statement_order_menu"
+        name="Orders"
+        parent="xepelin_bank_statement.xepelin_bank_statement_menu_root"
+        sequence="1"/>
+
+    <!-- Order -->
+    <!-- Menu action -->
+    <menuitem
+        id="xepelin_bank_statement_order_menu_action"
+        name="Orders"
+        parent="xepelin_bank_statement.xepelin_bank_statement_order_menu"
+        action="xepelin_bank_statement_order_action"
+        sequence="0"/>
+
+    <!-- Invoice -->
+    <menuitem
+        id="xepelin_bank_statement_invoice_menu_action"
+        name="Invoices"
+        parent="xepelin_bank_statement.xepelin_bank_statement_order_menu"
+        action="xepelin_bank_statement_invoice_action"
+        sequence="1"/>
+</odoo>

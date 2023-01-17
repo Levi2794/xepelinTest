@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- xepelin.movement.payment.type form view -->
+    <record id="xepelin_movement_payment_type_view_form" model="ir.ui.view">
+        <field name="name">xepelin.movement.payment.type.form</field>
+        <field name="model">xepelin.movement.payment.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group col="2">
+                        <group>
+                            <field name="company_id" invisible="1"/>
+                            <field name="name"/>
+                            <field name="color" widget="color_picker"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- xepelin.movement.payment.type tree view -->
+    <record id="xepelin_movement_payment_type_view_tree" model="ir.ui.view">
+        <field name="name">xepelin.movement.payment.type.tree</field>
+        <field name="model">xepelin.movement.payment.type</field>
+        <field name="arch" type="xml">
+            <tree string="Payment type">
+                <field name="company_id" invisible="1"/>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="color" widget="color_picker"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- xepelin.movement.payment.type Action Window -->
+    <record id="xepelin_movement_payment_type_action" model="ir.actions.act_window">
+        <field name="name">Payment type</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelin.movement.payment.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create a Payment type
+            </p>
+        </field>
+    </record>
+</odoo>

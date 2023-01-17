@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+
+<div t-name="reconciliation.line.match">
+    <div class="match_controls">
+        <span><input class="filter o_input" placeholder="Filter on account, label, partner, amount,..." type="text" t-att-value="state['filter_{{state.mode}}']"/></span>
+        <button class="btn btn-secondary btn-sm fa fa-search" type="button"></button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <td class="cell_account_code"><p>Account</p></td>
+                <td class="cell_due_date"><p>Date</p></td>
+                <td class="cell_label"><p>Label</p></td>
+                <td class="cell_left"><p></p></td>
+                <td class="cell_right"></td>
+                <td ></td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="load-more text-center">
+        <a href="#">Load more... (<span></span> remaining)</a>
+    </div>
+</div>
+
+</templates>

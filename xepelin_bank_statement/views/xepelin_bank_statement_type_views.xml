@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- xepelin.bank.statement.type form view -->
+    <record id="xepelin_bank_statement_type_view_form" model="ir.ui.view">
+        <field name="name">xepelin.bank.statement.type.form</field>
+        <field name="model">xepelin.bank.statement.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group col="2">
+                        <group>
+                            <field name="company_id" invisible="1"/>
+                            <field name="name"/>
+                            <field name="color" widget="color_picker"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="reconcile"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- xepelin.bank.statement.type tree view -->
+    <record id="xepelin_bank_statement_type_view_tree" model="ir.ui.view">
+        <field name="name">xepelin.bank.statement.type.tree</field>
+        <field name="model">xepelin.bank.statement.type</field>
+        <field name="arch" type="xml">
+            <tree string="Payment type">
+                <field name="company_id" invisible="1"/>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="color" widget="color_picker"/>
+                <field name="reconcile"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- xepelin.bank.statement.type Action Window -->
+    <record id="xepelin_bank_statement_type_action" model="ir.actions.act_window">
+        <field name="name">Payment type</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelin.bank.statement.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create a Payment type
+            </p>
+        </field>
+    </record>
+</odoo>

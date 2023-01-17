@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Bank Statement -->
+        <record id="seq_xepelin_bank_statement" model="ir.sequence">
+            <field name="name">Xepelin Bank Statement Sequence</field>
+            <field name="code">xepelin.bank.statement</field>
+            <field name="prefix">MOV</field>
+            <field name="padding">7</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- BCI -->
+        <record id="seq_xepelin_bank_bci" model="ir.sequence">
+            <field name="name">Xepelin Bank BCI Sequence</field>
+            <field name="code">xepelin.bank.bci</field>
+            <field name="prefix">BCI</field>
+            <field name="padding">7</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Santander -->
+        <record id="seq_xepelin_bank_santander" model="ir.sequence">
+            <field name="name">Xepelin Bank Santander Sequence</field>
+            <field name="code">xepelin.bank.santander</field>
+            <field name="prefix">SNT</field>
+            <field name="padding">7</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Order -->
+        <record id="seq_xepelin_bank_statement_order" model="ir.sequence">
+            <field name="name">Xepelin Bank Statement Order Sequence</field>
+            <field name="code">xepelin.bank.statement.order</field>
+            <field name="prefix">OR</field>
+            <field name="padding">7</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Invoice -->
+        <record id="seq_xepelin_bank_statement_invoice" model="ir.sequence">
+            <field name="name">Xepelin Bank Statement Invoice Sequence</field>
+            <field name="code">xepelin.bank.statement.invoice</field>
+            <field name="prefix">INV</field>
+            <field name="padding">7</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>

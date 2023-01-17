@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="res.partner" id="payment_partner_treasury_analyst">
+        <field name="name">TreasuryAnalyst</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="email">treasuryanalyst@test.com</field>
+    </record>
+
+    <record model="res.partner" id="payment_partner_treasury_supervisor">
+        <field name="name">TreasurySupervisor</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="email">treasurysupervisor@test.com</field>
+    </record>
+
+    <record model="res.partner" id="payment_partner_accounting">
+        <field name="name">Accounting</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="email">accounting@test.com</field>
+    </record>
+
+    <record model="res.partner" id="payment_partner_budget">
+        <field name="name">Budget</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="email">budget@test.com</field>
+    </record>
+</odoo>

@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    
+    <record id="view_bank_statement_tree_inherit_xepelin" model="ir.ui.view">
+        <field name="name">bank.statement.tree.inherit.xepelin</field>
+        <field name="model">account.bank.statement</field>
+        <field name="inherit_id" ref="account.view_bank_statement_tree"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='balance_start']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='balance_end_real']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="view_bank_statement_line_tree_inherit_xepelin" model="ir.ui.view">
+        <field name="name">bank.statement.line.tree.inherit.xepelin</field>
+        <field name="model">account.bank.statement</field>
+        <field name="inherit_id" ref="account.view_bank_statement_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//header" position="inside">
+                <button name="xepelin_orderinvoice_search" type="object" string="Search Order-Invoice" attrs="{'invisible':['|',('state','=','open'),('xepelin_enable_orderinvoice_search','=',False)]}"/>
+            </xpath>
+
+            <xpath expr="//label[@for='balance_start']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//sheet/group/group[2]/div" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='company_id']" position="before">
+                <field name="xepelin_enable_orderinvoice_search" invisible="1"/>
+                <field name="xepelin_source" attrs="{'readonly':[('state','!=','open')]}"/>
+                <field name="xepelin_source_filename" attrs="{'readonly':[('state','!=','open')]}"/>
+            </xpath>
+
+            <xpath expr="//field[@name='line_ids']//tree//field[@name='account_number']" position="after">
+                <field name="legend_code" optional="hide"/>
+            </xpath>
+
+            <xpath expr="//field[@name='line_ids']//tree//field[@name='partner_id']" position="before">
+                <field name="partner_name" optional="show"/>
+            </xpath>
+
+        </field>
+    </record>
+
+     <record id="account_journal_kanban_inherit_xepelin" model="ir.ui.view">
+        <field name="name">account.journal.kanban.inherit.xepelin</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.account_journal_dashboard_kanban_view"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//div[@id='dashboard_bank_cash_right']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>

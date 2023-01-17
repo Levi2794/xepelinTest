@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- RSM -->
+        <record id="seq_xepelin_movement_rsm" model="ir.sequence">
+            <field name="name">Xepelin Movement RSM Sequence</field>
+            <field name="code">xepelin.movement.rsm</field>
+            <field name="prefix">RSM</field>
+            <field name="padding">7</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!--BNC  -->
+        <record id="seq_xepelin_movement_bnc" model="ir.sequence">
+            <field name="name">Xepelin Movement BNC Sequence</field>
+            <field name="code">xepelin.movement.bnc</field>
+            <field name="prefix">BNC</field>
+            <field name="padding">7</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- SPEI -->
+        <record id="seq_xepelin_movement_spei" model="ir.sequence">
+            <field name="name">Xepelin Movement SPEI Sequence</field>
+            <field name="code">xepelin.movement.spei</field>
+            <field name="prefix">SPEI</field>
+            <field name="padding">7</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- CFDI -->
+        <record id="seq_xepelin_movement_cfdi" model="ir.sequence">
+            <field name="name">Xepelin Movement CFDI Sequence</field>
+            <field name="code">xepelin.movement.cfdi</field>
+            <field name="prefix">CFDI</field>
+            <field name="padding">7</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Movement -->
+        <record id="seq_xepelin_movement_movement" model="ir.sequence">
+            <field name="name">Xepelin Movement Movement Sequence</field>
+            <field name="code">xepelin.movement.movement</field>
+            <field name="prefix">MOV</field>
+            <field name="padding">7</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Order -->
+        <record id="seq_xepelin_movement_order" model="ir.sequence">
+            <field name="name">Xepelin Movement Order Sequence</field>
+            <field name="code">xepelin.movement.order</field>
+            <field name="prefix">OR</field>
+            <field name="padding">7</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Invoice -->
+        <record id="seq_xepelin_movement_invoice" model="ir.sequence">
+            <field name="name">Xepelin Movement Invoice Sequence</field>
+            <field name="code">xepelin.movement.invoice</field>
+            <field name="prefix">INV</field>
+            <field name="padding">7</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>

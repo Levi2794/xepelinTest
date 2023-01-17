@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<odoo>
+_
+    <record id="vrespartner_inherit" model="ir.ui.view">
+        <field name="name">res.partner.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            
+            <xpath expr="//field[@name='vat']" position="after">
+                <label for="vat" string=""/>
+                <div class="o_row">
+                    <field name="xepelin_enable_search_rfc" invisible="1" />
+                    <button name="search_bo_rfc" type="object" string="Buscar RFC" attrs="{'invisible':[('xepelin_enable_search_rfc','=',False)]}"/>
+                </div>
+            </xpath>
+
+        </field>
+
+    </record>
+
+</odoo>

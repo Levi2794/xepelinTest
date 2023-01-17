@@ -1,0 +1,1180 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* xepelin_movement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e-20220915\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-17 17:42+0000\n"
+"PO-Revision-Date: 2022-10-17 12:48-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.1.1\n"
+
+#. module: xepelin_movement
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">API Connection</span>"
+msgstr "<span class=“o_form_label”>Conección API</span>"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_import_source_movement_wizard__account
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__account_number
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__account_number
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__account_holder
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__account_holder
+msgid "Account holder"
+msgstr "Titular cuenta"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__message_needaction
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__message_needaction
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__message_needaction
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__message_needaction
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__message_needaction
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__activity_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__activity_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__activity_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__activity_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__activity_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__activity_exception_decoration
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__activity_exception_decoration
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__activity_exception_decoration
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__activity_exception_decoration
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__activity_exception_decoration
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__activity_state
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__activity_state
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__activity_state
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__activity_state
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__activity_state
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__activity_type_icon
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__activity_type_icon
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__activity_type_icon
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__activity_type_icon
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__activity_type_icon
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__actual_cash
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__actual_cash
+msgid "Actual cash"
+msgstr "Efectivo real"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__amount
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__amount
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__amount
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__amount
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__amount
+msgid "Amount"
+msgstr "Importe"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__order_id
+msgid "Associated order"
+msgstr "Orden asociada"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__message_attachment_count
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__message_attachment_count
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__message_attachment_count
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__message_attachment_count
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__message_attachment_count
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__import_source_movement_wizard__type__bnc
+msgid "BNC"
+msgstr "BNC"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__bnc_id
+msgid "BNC Movement"
+msgstr "Movimiento BNC"
+
+#. module: xepelin_movement
+#: model:ir.actions.act_window,name:xepelin_movement.xepelin_movement_bnc_action
+#: model:ir.model,name:xepelin_movement.model_xepelin_movement_bnc
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_bnc_view_form
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_bnc_view_tree
+msgid "BNC Movements"
+msgstr "Movimientos BNC"
+
+#. module: xepelin_movement
+#: model:ir.ui.menu,name:xepelin_movement.xepelin_movement_bnc_menu_action
+msgid "BNC movements"
+msgstr "Movimientos BNC"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__bo_id
+msgid "BO ID"
+msgstr "BO ID"
+
+#. module: xepelin_movement
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.res_config_settings_view_form
+msgid "Back Office API"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_res_config_settings__back_office_token
+msgid "Back Office Token"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_res_config_settings__back_office_url
+msgid "Back Office URL"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__balance
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__balance
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__balance
+msgid "Balance"
+msgstr "Saldo"
+
+#. module: xepelin_movement
+#: model:ir.actions.act_window,name:xepelin_movement.xepelin_movement_movement_action
+msgid "Bank Movements"
+msgstr "Movimientos Bancarios"
+
+#. module: xepelin_movement
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_movement_view_tree
+msgid "Bank movements"
+msgstr "Movimientos bancarios"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__base_rate
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__debt_base_rate
+msgid "Base rate"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__beneficiary_account
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__beneficiary_account
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__beneficiary_account
+msgid "Beneficiary account"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__beneficiary_bank
+msgid "Beneficiary bank"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__beneficiary_name
+msgid "Beneficiary name"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__clabe_ordering_account
+msgid "CLABE ordering account"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__clabe_payer_account
+msgid "CLABE payer account"
+msgstr ""
+
+#. module: xepelin_movement
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.import_source_movement_form_wizard
+msgid "Cancel"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model,name:xepelin_movement.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__company_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__company_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__company_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__company_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__company_id
+msgid "Company"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__concept
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__concept
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__concept
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__concept
+msgid "Concept"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model,name:xepelin_movement.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__count_invoices
+msgid "Count invoices"
+msgstr ""
+
+#. module: xepelin_movement
+#: model_terms:ir.actions.act_window,help:xepelin_movement.xepelin_movement_bnc_action
+msgid "Create a BNC movement"
+msgstr ""
+
+#. module: xepelin_movement
+#: model_terms:ir.actions.act_window,help:xepelin_movement.xepelin_movement_rsm_action
+msgid "Create a RSM movement"
+msgstr ""
+
+#. module: xepelin_movement
+#: model_terms:ir.actions.act_window,help:xepelin_movement.xepelin_movement_spei_action
+msgid "Create a SPEI movement"
+msgstr ""
+
+#. module: xepelin_movement
+#: model_terms:ir.actions.act_window,help:xepelin_movement.xepelin_movement_movement_action
+msgid "Create a movement"
+msgstr ""
+
+#. module: xepelin_movement
+#: model_terms:ir.actions.act_window,help:xepelin_movement.xepelin_movement_order_action
+msgid "Create an order"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__created_at
+msgid "Created at"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_import_source_movement_wizard__create_uid
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__create_uid
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__create_uid
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__create_uid
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__create_uid
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__create_uid
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_import_source_movement_wizard__create_date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__create_date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__create_date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__create_date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__create_date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__create_date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_movement__type__credit
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_rsm__type__credit
+msgid "Credit"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__currency_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__currency_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__currency_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__currency_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_import_source_movement_wizard__date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__date
+msgid "Date"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__date_operation
+msgid "Date operation"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__days_debt
+msgid "Days debt"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__days_issued
+msgid "Days issued"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_movement__type__debit
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_rsm__type__debit
+msgid "Debit"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__debt_interest_at_date
+msgid "Debt interest at date"
+msgstr "Interés Aproximado al día"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__default_date
+msgid "Default date"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_import_source_movement_wizard__display_name
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__display_name
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__display_name
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__display_name
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__display_name
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__display_name
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_movement__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__expiration_date
+msgid "Expiration date"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__extended_reference
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__extended_reference
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__extended_reference
+msgid "Extended reference"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_import_source_movement_wizard__template
+msgid "File"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_import_source_movement_wizard__name
+msgid "File Name"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__name
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__folio
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__name
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__name
+msgid "Folio"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__message_follower_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__message_follower_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__message_follower_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__message_follower_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__message_follower_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__message_partner_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__message_partner_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__message_partner_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__message_partner_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__message_partner_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_bnc__activity_type_icon
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_invoice__activity_type_icon
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_movement__activity_type_icon
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_order__activity_type_icon
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_rsm__activity_type_icon
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_spei__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__fund_payment_date
+msgid "Fund payment date"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__has_message
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__has_message
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__has_message
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__has_message
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__has_message
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_import_source_movement_wizard__id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__id
+msgid "ID"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__activity_exception_icon
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__activity_exception_icon
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__activity_exception_icon
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__activity_exception_icon
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__activity_exception_icon
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_bnc__activity_exception_icon
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_invoice__activity_exception_icon
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_movement__activity_exception_icon
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_order__activity_exception_icon
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_rsm__activity_exception_icon
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_spei__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__identifier
+msgid "Identifier"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_bnc__message_needaction
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_bnc__message_unread
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_invoice__message_needaction
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_invoice__message_unread
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_movement__message_needaction
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_movement__message_unread
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_order__message_needaction
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_order__message_unread
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_rsm__message_needaction
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_rsm__message_unread
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_spei__message_needaction
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_spei__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_bnc__message_has_error
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_invoice__message_has_error
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_movement__message_has_error
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_order__message_has_error
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_rsm__message_has_error
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_spei__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.actions.act_window,name:xepelin_movement.import_source_movement_wizard_action
+msgid "Import source movement"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model,name:xepelin_movement.model_xepelin_movement_invoice
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_order_view_form
+msgid "Invoices"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__message_is_follower
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__message_is_follower
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__message_is_follower
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__message_is_follower
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__message_is_follower
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__issue_date
+msgid "Issue date"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__issuer_business_id
+msgid "Issuer business id"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__issuer_has_pfx_certificate
+msgid "Issuer has pfx certificate"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__issuer_identifier
+msgid "Issuer identifier"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__issuer_name
+msgid "Issuer name"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_import_source_movement_wizard____last_update
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc____last_update
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice____last_update
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement____last_update
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order____last_update
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm____last_update
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_import_source_movement_wizard__write_uid
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__write_uid
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__write_uid
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__write_uid
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__write_uid
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__write_uid
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_import_source_movement_wizard__write_date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__write_date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__write_date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__write_date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__write_date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__write_date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__latest_level_update
+msgid "Latest level update"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__latest_score_update
+msgid "Latest score update"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__legend_code
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__legend_code
+msgid "Legend code"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__legend_code_concept
+msgid "Legend code concept"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__level
+msgid "Level"
+msgstr ""
+
+#. module: xepelin_movement
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.import_source_movement_form_wizard
+msgid "Load"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__message_main_attachment_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__message_main_attachment_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__message_main_attachment_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__message_main_attachment_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__message_main_attachment_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: xepelin_movement
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_bnc_view_form
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_spei_view_form
+msgid "Merge RSM"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_bnc__state__merged
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_rsm__state__merged
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_spei__state__merged
+msgid "Merged"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__message_has_error
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__message_has_error
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__message_has_error
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__message_has_error
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__message_has_error
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__message_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__message_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__message_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__message_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__message_ids
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__method_payment
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__method_payment
+msgid "Method of payment"
+msgstr ""
+
+#. module: xepelin_movement
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_order_view_form
+msgid "Move Order to Reconciled state"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__movement_id
+msgid "Movement"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__movement_number
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__movement_number
+msgid "Movement number"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model,name:xepelin_movement.model_xepelin_movement_movement
+#: model:ir.ui.menu,name:xepelin_movement.xepelin_movement_movement_menu
+#: model:ir.ui.menu,name:xepelin_movement.xepelin_movement_movement_menu_root
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_movement_view_form
+msgid "Movements"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__my_activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__my_activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__my_activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__my_activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__my_activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__activity_date_deadline
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__activity_summary
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__activity_summary
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__activity_summary
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__activity_summary
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__activity_summary
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__activity_type_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__activity_type_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__activity_type_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__activity_type_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__activity_type_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__name
+msgid "Number"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__message_needaction_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__message_needaction_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__message_needaction_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__message_needaction_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__message_needaction_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__message_has_error_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__message_has_error_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__message_has_error_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__message_has_error_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__message_has_error_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_bnc__message_needaction_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_invoice__message_needaction_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_movement__message_needaction_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_order__message_needaction_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_rsm__message_needaction_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_spei__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_bnc__message_has_error_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_invoice__message_has_error_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_movement__message_has_error_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_order__message_has_error_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_rsm__message_has_error_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_spei__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_bnc__message_unread_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_invoice__message_unread_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_movement__message_unread_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_order__message_unread_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_rsm__message_unread_counter
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_spei__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__numerical_reference
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__numerical_reference
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__numerical_reference
+msgid "Numerical reference"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model,name:xepelin_movement.model_xepelin_movement_order
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_order_view_form
+msgid "Order"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__ordering_account
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__ordering_account
+msgid "Ordering account"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__ordering_account_holder
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__ordering_account_holder
+msgid "Ordering account holder"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.actions.act_window,name:xepelin_movement.xepelin_movement_order_action
+#: model:ir.ui.menu,name:xepelin_movement.xepelin_movement_order_menu
+#: model:ir.ui.menu,name:xepelin_movement.xepelin_movement_order_menu_action
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_order_view_tree
+msgid "Orders"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__payed_interests
+msgid "Payed interests"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__payer_account
+msgid "Payer account"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__payer_bank
+msgid "Payer bank"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__payer_debt_fd
+msgid "Payer debt FD"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__payer_identifier
+msgid "Payer identifier"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__payer_ame
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__payer_name
+msgid "Payer name"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__payment_confirmed
+msgid "Payment confirmed"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__payment_date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__payment_date
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__payment_date
+msgid "Payment date"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__payment_status
+msgid "Payment status"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_bnc__state__pending_merge
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_rsm__state__pending_merge
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_spei__state__pending_merge
+msgid "Pending merge"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__import_source_movement_wizard__type__rsm
+msgid "RSM"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model,name:xepelin_movement.model_xepelin_movement_rsm
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__rsm_id
+msgid "RSM Movement"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.actions.act_window,name:xepelin_movement.xepelin_movement_rsm_action
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_rsm_view_form
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_rsm_view_tree
+msgid "RSM Movements"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__rsm_id
+msgid "RSM movement"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.ui.menu,name:xepelin_movement.xepelin_movement_rsm_menu_action
+msgid "RSM movements"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__receiving_bank_number
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__receiving_bank_number
+msgid "Receiving bank number"
+msgstr ""
+
+#. module: xepelin_movement
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_order_view_form
+msgid "Reconcile"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_invoice__state__reconciled
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_movement__state__reconciled
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_order__state__reconciled
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_movement_view_form
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_order_view_form
+msgid "Reconciled"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__reference
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__reference
+msgid "Reference"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__invoice_ids
+msgid "Related invoices"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__movement_ids
+msgid "Related movements"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__order_id
+msgid "Related order"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__activity_user_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__activity_user_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__activity_user_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__activity_user_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__activity_user_id
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__return_reason
+msgid "Return reason"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__import_source_movement_wizard__type__spei
+msgid "SPEI"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__spei_id
+msgid "SPEI Movement"
+msgstr "Movimiento SPEI"
+
+#. module: xepelin_movement
+#: model:ir.actions.act_window,name:xepelin_movement.xepelin_movement_spei_action
+#: model:ir.model,name:xepelin_movement.model_xepelin_movement_spei
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_spei_view_form
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_spei_view_tree
+msgid "SPEI Movements"
+msgstr "Movimientos SPEI"
+
+#. module: xepelin_movement
+#: model:ir.ui.menu,name:xepelin_movement.xepelin_movement_spei_menu_action
+msgid "SPEI movements"
+msgstr "Movimientos SPEI"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__score
+msgid "Score"
+msgstr ""
+
+#. module: xepelin_movement
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_movement_view_form
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_movement_view_tree
+msgid "Search"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__segment
+msgid "Segment"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.actions.act_window,name:xepelin_movement.xepelin_movement_res_config_settings_menu_action
+msgid "Settings"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__source
+msgid "Source"
+msgstr "Origen"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__state
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__state
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__state
+msgid "State"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__state
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__status
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__state
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__state
+msgid "Status"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_bnc__activity_state
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_invoice__activity_state
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_movement__activity_state
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_order__activity_state
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_rsm__activity_state
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_spei__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__status_reason
+msgid "Status reason"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__tax_id_ordering_account
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__tax_id_ordering_account
+msgid "Tax ID of the ordering account"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.constraint,message:xepelin_movement.constraint_xepelin_movement_bnc_bnc_rsm_unique
+#: model:ir.model.constraint,message:xepelin_movement.constraint_xepelin_movement_spei_spei_rsm_unique
+msgid "The RSM can only be linked once"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.constraint,message:xepelin_movement.constraint_xepelin_movement_bnc_bnc_movement_number_unique
+#: model:ir.model.constraint,message:xepelin_movement.constraint_xepelin_movement_movement_movement_number_unique
+msgid "The movement number must be unique."
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.constraint,message:xepelin_movement.constraint_xepelin_movement_bnc_bnc_reference_unique
+msgid "The numerical reference must be unique."
+msgstr "La referencia numérica debe ser única."
+
+#. module: xepelin_movement
+#: model:ir.model.constraint,message:xepelin_movement.constraint_xepelin_movement_rsm_reference_unique
+#: model:ir.model.constraint,message:xepelin_movement.constraint_xepelin_movement_spei_spei_reference_unique
+msgid "The reference must be unique."
+msgstr "La referencia debe ser única."
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_res_company__tz
+msgid "Timezone"
+msgstr "Zona horaria"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__total_reconcile
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_invoice__state__to_reconcile
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_movement__state__to_reconcile
+#: model:ir.model.fields.selection,name:xepelin_movement.selection__xepelin_movement_order__state__to_reconcile
+#: model:ir.ui.menu,name:xepelin_movement.xepelin_movement_movement_menu_action
+msgid "To reconcile"
+msgstr "A conciliar"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__today_difference_days
+msgid "Today difference days"
+msgstr ""
+
+#. module: xepelin_movement
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.res_config_settings_view_form
+msgid "Token"
+msgstr ""
+
+#. module: xepelin_movement
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_bnc_view_tree
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_movement_view_tree
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_rsm_view_tree
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.xepelin_movement_spei_view_tree
+msgid "Total"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__total_amount_credit_notes
+msgid "Total amount credit notes"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__total_capital_debt
+msgid "Total capital debt"
+msgstr "Deuda Capital"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__total_debt
+msgid "Total debt"
+msgstr "Deuda total"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__total_invoices
+msgid "Total invoices"
+msgstr "Suma Deuda Facturas"
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__total_movements
+msgid "Total movements"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__total_partial_days
+msgid "Total partial days"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__tracking_key
+msgid "Tracking key"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_import_source_movement_wizard__type
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__type
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__type
+msgid "Type"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_bnc__activity_exception_decoration
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_invoice__activity_exception_decoration
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_movement__activity_exception_decoration
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_order__activity_exception_decoration
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_rsm__activity_exception_decoration
+#: model:ir.model.fields,help:xepelin_movement.field_xepelin_movement_spei__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: xepelin_movement
+#: model_terms:ir.ui.view,arch_db:xepelin_movement.res_config_settings_view_form
+msgid "URL"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__message_unread
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__message_unread
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__message_unread
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__message_unread
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__message_unread
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_bnc__message_unread_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_invoice__message_unread_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_movement__message_unread_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_order__message_unread_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_rsm__message_unread_counter
+#: model:ir.model.fields,field_description:xepelin_movement.field_xepelin_movement_spei__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: xepelin_movement
+#: model:ir.model,name:xepelin_movement.model_import_source_movement_wizard
+msgid "Wizard to import source movements"
+msgstr ""

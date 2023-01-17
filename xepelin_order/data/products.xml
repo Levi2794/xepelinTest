@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- FINANCING Product -->
+        <record id="xepelin_product_fee" model="product.product">
+            <field name="image_1920" type="base64" file="xepelin_order/static/src/img/fee.png"/>
+            <field name="name">FEE</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="taxes_id" eval="False"/>
+            <field name="supplier_taxes_id" eval="False"/>
+            <field name="default_code">XP-FEE</field>
+            <field name="detailed_type">service</field>
+        </record>
+        
+        <!-- FINANCING Product -->
+        <record id="xepelin_product_operationcost" model="product.product">
+            <field name="image_1920" type="base64" file="xepelin_order/static/src/img/operationcost.jpeg"/>
+            <field name="name">Operation Cost</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="taxes_id" eval="False"/>
+            <field name="supplier_taxes_id" eval="False"/>
+            <field name="default_code">XP-OPCOST</field>
+            <field name="detailed_type">service</field>
+        </record>
+
+        <!-- FINANCING Product -->
+        <record id="xepelin_product_financing" model="product.product">
+            <field name="image_1920" type="base64" file="xepelin_order/static/src/img/financing.jpeg"/>
+            <field name="name">FINANCING</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="taxes_id" eval="False"/>
+            <field name="supplier_taxes_id" eval="False"/>
+            <field name="default_code">XP-FINANCING</field>
+            <field name="detailed_type">service</field>
+        </record>
+
+    </data>
+</odoo>

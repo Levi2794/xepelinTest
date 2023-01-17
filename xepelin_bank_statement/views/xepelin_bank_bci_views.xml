@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- xepelin.bank.bci form view -->
+    <record id="xepelin_bank_bci_view_form" model="ir.ui.view">
+        <field name="name">xepelin.bank.bci.form</field>
+        <field name="model">xepelin.bank.bci</field>
+        <field name="arch" type="xml">
+            <form create="0">
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,to_reconcile,reconciled"/>
+                    <button string="Search"
+                        icon="fa-search"
+                        name="search_invoices_sg"
+                        type="object"
+                        attrs="{'invisible':['|','|',('origin_rut', '=', False),('state', '!=', 'draft'),('type', '!=', 'payment')]}"/>
+                    <!--<button string="Redirect" name="action_redirect" type="object" class="oe_highlight"/>-->
+                </header>
+                <sheet>
+                    <field name="company_id" invisible="1"/>
+                    <field name="currency_id" invisible="1"/>
+                    <widget name="web_ribbon" title="Reconciled" attrs="{'invisible': [('state', '!=', 'reconciled')]}"/>
+                    <div class="oe_title oe_inline">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <field name="payment_type_ids" widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True, 'no_quick_create': True}"/>
+                    </group>
+                    <group col="2">
+                        <group>
+                            <label for="order_id"/>
+                            <div class="o_row">
+                                <field name="order_id" options="{'no_create': True, 'no_create_edit':True}" readonly="1"/>
+                                <button name="bo_order_link" icon="fa-eye" type="object" string="BO" attrs="{'invisible': [('order_id', '=', False)]}"/>
+                            </div>
+                            <field name="transaction_date"/>
+                            <field name="accounting_date"/>
+                            <field name="office"/>
+                            <field name="movement"/>
+                            <field name="document_number"/>
+                            <field name="type"/>
+                            <field name="amount" widget="monetary"/>
+                            <field name="gloss_detail"/>
+                            <field name="purchase_type"/>
+                            <field name="commerce_name"/>
+                            <field name="area"/>
+                            <field name="commerce_rut"/>
+                            <field name="transaction_code"/>
+                            <field name="service"/>
+                            <field name="client_number"/>
+                            <field name="company"/>
+                            <field name="company_rut"/>
+                            <field name="origin_rut"/>
+                            <field name="origin_name"/>
+                            <field name="origin_account_type"/>
+                            <field name="origin_account_number"/>
+                            <field name="origin_bank"/>
+                            <field name="payment_type_description"/>
+                            <field name="email"/>
+                            <field name="internal_gloss"/>
+                            <field name="transfer_code"/>
+                            <field name="recipient_rut"/>
+                            <field name="recipient_name"/>
+                            <field name="recipient_account_type"/>
+                            <field name="recipient_account"/>
+                            <field name="recipient_bank"/>
+                            <field name="recipient_email"/>
+                            <field name="comment_transfer"/>
+                            <field name="city"/>
+                            <field name="commune"/>
+                            <field name="movement_type"/>
+                            <field name="last_four_digits_card"/>
+                            <field name="operation_number"/>
+                            <field name="folio"/>
+                            <field name="file_name"/>
+                            <field name="payroll_name"/>
+                            <field name="payment_date"/>
+                            <field name="upload_date"/>
+                            <field name="rejection_reason"/>
+                            <field name="billing_company_rut"/>
+                            <field name="billing_company_business_name"/>
+                            <field name="id_number"/>
+                            <field name="address"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- xepelin.bank.bank tree view -->
+    <record id="xepelin_bank_statement_view_tree" model="ir.ui.view">
+        <field name="name">xepelin.bank.bci.tree</field>
+        <field name="model">xepelin.bank.bci</field>
+        <field name="arch" type="xml">
+            <tree import="0" js_class="import_bank_statement_button" multi_edit="1">
+                <field name="name" readonly="1" string="Folio"/>
+                <field name="transaction_date" readonly="1"/>
+                <field name="accounting_date" readonly="1"/>
+                <field name="office" readonly="1"/>
+                <field name="movement" readonly="1"/>
+                <field name="document_number" readonly="1" optional="hide"/>
+                <field name="type" readonly="1"/>
+                <field name="amount" widget="monetary" sum="Total" readonly="1"/>
+                <field name="currency_id" readonly="1"/>
+                <field name="gloss_detail" optional="hide" readonly="1"/>
+                <field name="origin_rut" readonly="1"/>
+                <field name="origin_name" readonly="1"/>
+                <field name="origin_account_type" optional="hide" readonly="1"/>
+                <field name="origin_account_number" optional="hide" readonly="1"/>
+                <field name="origin_bank" optional="hide" readonly="1"/>
+                <field name="type"/>
+                <field name="state"/>
+                <button string="Search"
+                    icon="fa-search"
+                    name="search_invoices_sg"
+                    type="object"
+                    attrs="{'invisible':['|','|',('origin_rut', '=', ''),('state', '!=', 'draft'),('type', '!=', 'payment')]}"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="xepelin_bank_bci_view_search" model="ir.ui.view">
+        <field name="name">xepelin.bank.bci.search</field>
+        <field name="model">xepelin.bank.bci</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="transaction_date"/>
+                <field name="accounting_date"/>
+                <field name="origin_rut"/>
+                <group expand="1" string="Group By">
+                    <filter string="Transaction date" name="transaction_date_group" context="{'group_by': 'transaction_date'}"/>
+                    <filter string="Accounting date" name="accounting_date_group" context="{'group_by': 'accounting_date'}"/>
+                    <filter string="Type" name="type_group" context="{'group_by': 'type'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- xepelin.bank.bci Action Window -->
+    <record id="xepelin_bank_bci_action" model="ir.actions.act_window">
+        <field name="name">BCI Bank</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelin.bank.bci</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create a BCI Movement
+            </p>
+        </field>
+    </record>
+</odoo>

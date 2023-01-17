@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- xepelin.bank.statement.order form view -->
+    <record id="xepelin_bank_statement_order_view_form" model="ir.ui.view">
+        <field name="name">xepelin.bank.statement.order.form</field>
+        <field name="model">xepelin.bank.statement.order</field>
+        <field name="arch" type="xml">
+            <form string="Order" create="false">
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="to_reconcile,reconciled"/>
+                    <!-- <button name="button_reconciled" class="oe_highlight" states="to_reconcile" string="Reconcile" type="object" help="Move Order to Reconciled state"/> -->
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Reconciled" attrs="{'invisible': [('state', '!=', 'reconciled')]}"/>
+                    <div class="oe_title oe_inline">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <label for="number"/>
+                        <div class="o_row">
+                            <field name="number" readonly="1"/>
+                            <button name="bo_order_link" icon="fa-eye" type="object" string="BO"/>
+                        </div>
+                        <field name="count_invoices"/>
+                    </group>
+                    <notebook>
+                        <page string="Invoices" name="invoices_lines">
+                            <field name="invoice_ids">
+                                <tree widget='one2many' limit="15" delete="0" create="0" default_order="expiration_date desc">
+                                    <field name="folio" readonly="1"/>
+                                    <field name="identifier" readonly="1"/>
+                                    <field name="amount" readonly="1"/>
+                                    <field name="currency_id" readonly="1"/>
+                                    <field name="invoice_stake_holder_identifier" readonly="1"/>
+                                    <field name="expiration_date" readonly="1"/>
+                                    <field name="bank_statement_id" widget="many2one"/>
+                                    <field name="state"/>
+                                    <button name="action_reconcile" icon="fa-handshake-o" states="to_reconcile" string="Reconcile" type="object"/>
+                                    <button name="action_undo_reconcile" icon="fa-chain-broken" states="reconciled" string="Undo" type="object"/>
+                                </tree>
+                            </field>
+                            <div>
+                                <group col="6" class="mt-2 mt-md-0">
+                                    <group class="oe_subtotal_footer oe_right" colspan="2" name="order_total">
+                                        <field name="total_invoices" widget="monetary"/>
+                                        <field name="total_movements" widget="monetary"/>
+                                        <div class="o_td_label"></div>
+                                        <field name="total_reconcile"/>
+                                    </group>
+                                    <div class="oe_clear"/>
+                                </group>
+                            </div>
+                        </page>
+                        <page name="order_details" string="Details">
+                            <group>
+                                <field name="final_amount"/>
+                                <field name="transfer"/>
+                                <field name="retention"/>
+                                <field name="retention_pct"/>
+                                <field name="advance_payment"/>
+                                <field name="interest"/>
+                                <field name="base_rate"/>
+                                <field name="operation_cost"/>
+                                <field name="issued_date"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- xepelin.bank.statement.order tree view -->
+    <record id="xepelin_bank_statement_order_view_tree" model="ir.ui.view">
+        <field name="name">xepelin.bank.statement.order.view.tree</field>
+        <field name="model">xepelin.bank.statement.order</field>
+        <field name="arch" type="xml">
+            <tree string="Orders" create="false">
+                <field name="name"/>
+                <field name="number"></field>
+                <button name="bo_order_link" icon="fa-eye" type="object" string="BO"/>
+                <field name="state"/>
+                <field name="count_invoices"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- xepelin.bank.statement.order search view -->
+    <record id="xepelin_bank_statement_order_view_search" model="ir.ui.view">
+        <field name="name">xepelin.bank.statement.order.search</field>
+        <field name="model">xepelin.bank.statement.order</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <filter string="To reconcile" name="to_reconcile" domain="[('state', '=', 'to_reconcile')]"/>
+                <filter string="Reconciled" name="reconciled" domain="[('state', '=', 'reconciled')]"/>
+                <group expand="1" string="Group By">
+                    <filter string="State" name="state_group" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="xepelin_bank_statement_order_action" model="ir.actions.act_window">
+        <field name="name">Orders</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelin.bank.statement.order</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="context">{'search_default_state_group': 1}</field> -->
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                    Create an order
+            </p>
+        </field>
+    </record>
+</odoo>

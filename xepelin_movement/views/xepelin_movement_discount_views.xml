@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- xepelin.movement.discount form view -->
+    <record id="xepelin_movement_discount_view_form" model="ir.ui.view">
+        <field name="name">xepelin.movement.discount.form</field>
+        <field name="model">xepelin.movement.discount</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group col="2">
+                        <group>
+                            <field name="company_id" invisible="1"/>
+                            <field name="currency_id" invisible="1"/>
+                            <field name="reason"/>
+                            <field name="amount" widget="monetary"/>
+                            <field name="order_id" widget="many2one" options="{'no_create_edit': True, 'no_quick_create': True}"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- xepelin.movement.discount tree view -->
+    <record id="xepelin_movement_discount_view_tree" model="ir.ui.view">
+        <field name="name">xepelin.movement.discount.tree</field>
+        <field name="model">xepelin.movement.discount</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="company_id" invisible="1"/>
+                <field name="currency_id" invisible="1"/>
+                <field name="reason"/>
+                <field name="amount" widget="monetary"/>
+                <field name="order_id" widget="many2one" options="{'no_create_edit': True, 'no_quick_create': True}"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- xepelin.movement.discount Search -->
+    <record id="xepelin_movement_discount_view_search" model="ir.ui.view">
+        <field name="name">xepelin.movement.discount.search</field>
+        <field name="model">xepelin.movement.discount</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="reason"/>
+                <field name="amount"/>
+                <group expand="1" string="Group By">
+                    <filter string="Reason" name="reason_group" context="{'group_by': 'reason'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- xepelin.movement.discount Action Window -->
+    <record id="xepelin_movement_discount_action" model="ir.actions.act_window">
+        <field name="name">Discounts</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelin.movement.discount</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create a Discount
+            </p>
+        </field>
+    </record>
+</odoo>

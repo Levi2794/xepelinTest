@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_xepelin-payment-request-payment-request_group_budget,access.xepelin-payment-request.payment-request,model_xepelinpaymentrequest_paymentrequest,xepelin-payment-request.group_budget,1,1,1,1
+access_xepelin-payment-request-payment-request_group_accounting,access.xepelin-payment-request.payment-request,model_xepelinpaymentrequest_paymentrequest,xepelin-payment-request.group_accounting,1,1,1,1
+access_xepelin-payment-request-payment-request_group_treasury_analyst,access.xepelin-payment-request.payment-request,model_xepelinpaymentrequest_paymentrequest,xepelin-payment-request.group_treasury_analyst,1,1,1,1
+access_xepelin-payment-request-payment-request_group_treasury_supervisor,access.xepelin-payment-request.payment-request,model_xepelinpaymentrequest_paymentrequest,xepelin-payment-request.group_treasury_supervisor,1,1,1,1

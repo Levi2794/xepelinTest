@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- BIZOPS -->
+    <record id="payment_area_bizops" model="xepelin.payment.area">
+        <field name="code">bizops</field>
+        <field name="name">Bizops</field>
+    </record>
+
+    <!-- DATA -->
+    <record id="payment_area_data" model="xepelin.payment.area">
+        <field name="code">data</field>
+        <field name="name">Data</field>
+    </record>
+
+    <!-- DEBT CAPITAL MARKETS AND STRUCTURED FINANCE -->
+    <record id="payment_area_debt_capital_markets_and_structured_finance" model="xepelin.payment.area">
+        <field name="code">debt_capital_markets_and_structured_finance</field>
+        <field name="name">Debt Capital Markets &amp; Structured Finance</field>
+    </record>
+
+    <!-- FINANCES AND ACCOUNTING -->
+    <record id="payment_area_finances_and_accounting" model="xepelin.payment.area">
+        <field name="code">finances_and_accounting</field>
+        <field name="name">Finanzas / Contabilidad</field>
+    </record>
+
+    <!-- LEGAL -->
+    <record id="payment_area_legal" model="xepelin.payment.area">
+        <field name="code">legal</field>
+        <field name="name">Legal</field>
+    </record>
+
+    <!-- COLLECTION AND PORTFOLIO -->
+    <record id="payment_area_collection_and_portfolio" model="xepelin.payment.area">
+        <field name="code">collection_and_portfolio</field>
+        <field name="name">Cobranza / Portafolio</field>
+    </record>
+
+    <!-- GROWTH AND MARKETING -->
+    <record id="payment_area_growth_and_marketing" model="xepelin.payment.area">
+        <field name="code">growth_and_marketing</field>
+        <field name="name">Growth / Marketing</field>
+    </record>
+
+    <!-- OPERATIONS -->
+    <record id="payment_area_operations" model="xepelin.payment.area">
+        <field name="code">operations</field>
+        <field name="name">Operations</field>
+    </record>
+
+    <!-- PEOPLE AND CULTURE -->
+    <record id="payment_area_people_and_culture" model="xepelin.payment.area">
+        <field name="code">people_and_culture</field>
+        <field name="name">People &amp; Culture</field>
+    </record>
+
+    <!-- PORTFOLIO AND RISKS -->
+    <record id="payment_area_portfolio_and_risks" model="xepelin.payment.area">
+        <field name="code">portfolio_and_risks</field>
+        <field name="name">Portfolio &amp; Risks</field>
+    </record>
+
+    <!-- PRODUCT -->
+    <record id="payment_area_product" model="xepelin.payment.area">
+        <field name="code">product</field>
+        <field name="name">Product</field>
+    </record>
+
+    <!-- REVENUE -->
+    <record id="payment_area_revenue" model="xepelin.payment.area">
+        <field name="code">revenue</field>
+        <field name="name">Revenue</field>
+    </record>
+
+    <!-- TECH -->
+    <record id="payment_area_tech" model="xepelin.payment.area">
+        <field name="code">tech</field>
+        <field name="name">Tech</field>
+    </record>
+</odoo>

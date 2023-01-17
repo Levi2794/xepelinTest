@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="import_bank_statement_form_wizard" model="ir.ui.view">
+            <field name="name">import.bank.statement.form.wizard</field>
+            <field name="model">import.bank.statement.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="state" invisible="1"/>
+                    <field name="name" invisible="1" force_save="1"/>
+                    <group>
+                        <field name="date" readonly="1" force_save="1"/>
+                        <field name="type" readonly="1"/>
+                        <field name="template" filename="name" states="upload"/>
+                    </group>
+                    <footer>
+                        <button name="process_data_action" string="Import" type="object" class="oe_highlight" />
+                        <button string="Cancel" class="btn-secondary" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="import_bank_statement_wizard_action" model="ir.actions.act_window">
+            <field name="name">Import bank statement</field>
+            <field name="res_model">import.bank.statement.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

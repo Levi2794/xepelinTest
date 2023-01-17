@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_budget" model="res.groups">
+        <field name="name">Xepelin Payment / Group Budget</field>
+    </record>
+    <record id="group_accounting" model="res.groups">
+        <field name="name">Xepelin Payment / Group Accounting</field>
+    </record>
+    <record id="group_treasury_analyst" model="res.groups">
+        <field name="name">Xepelin Payment / Group Treasury Analyst</field>
+    </record>
+    <record id="group_treasury_supervisor" model="res.groups">
+        <field name="name">Xepelin Payment / Group Treasury Supervisor</field>
+    </record>
+    <record id="group_admin" model="res.groups">
+        <field name="name">Xepelin Payment / Group Admin</field>
+    </record>
+
+     <!-- BIZOPS -->
+    <record id="group_bizops_supervisor" model="res.groups">
+        <field name="name">Xepelin Payment / Group Bizops Supervisor</field>
+    </record>
+    <record id="group_bizops_analyst" model="res.groups">
+        <field name="name">Xepelin Payment / Group Bizops Analyst</field>
+    </record>
+
+    <!-- DATA -->
+     <record id="group_data_supervisor" model="res.groups">
+        <field name="name">Xepelin Payment / Group Data Supervisor</field>
+    </record>
+    <record id="group_data_analyst" model="res.groups">
+        <field name="name">Xepelin Payment / Group Data Analyst</field>
+    </record>
+
+    <!-- DEBT CAPITAL MARKETS AND STRUCTURED FINANCE -->
+     <record id="group_debt_capital_markets_and_structured_finance_supervisor" model="res.groups">
+        <field name="name">Xepelin Payment / Group Debt capital markets and Structured finance Supervisor</field>
+    </record>
+    <record id="group_debt_capital_markets_and_structured_finance_analyst" model="res.groups">
+        <field name="name">Xepelin Payment / Group Debt capital markets and Structured finance Analyst</field>
+    </record>
+
+    <!-- FINANCES AND ACCOUNTING -->
+    <record id="group_finances_and_accounting_supervisor" model="res.groups">
+        <field name="name">Xepelin Payment / Group Finances and Accounting Supervisor</field>
+    </record>
+    <record id="group_finances_and_accounting_analyst" model="res.groups">
+        <field name="name">Xepelin Payment / Group Finances and Accounting Analyst</field>
+    </record>
+
+    <!-- LEGAL -->
+    <record id="group_legal_supervisor" model="res.groups">
+        <field name="name">Xepelin Payment / Group Legal Supervisor</field>
+    </record>
+    <record id="group_legal_analyst" model="res.groups">
+        <field name="name">Xepelin Payment / Group Legal Analyst</field>
+    </record>
+
+    <!-- COLLECTION AND PORTFOLIO -->
+    <record id="group_collection_and_portfolio_supervisor" model="res.groups">
+        <field name="name">Xepelin Payment / Group Collection and Portfolio Supervisor</field>
+    </record>
+    <record id="group_collection_and_portfolio_analyst" model="res.groups">
+        <field name="name">Xepelin Payment / Group Collection and Portfolio Analyst</field>
+    </record>
+
+    <!-- GROWTH AND MARKETING -->
+    <record id="group_growth_and_marketing_supervisor" model="res.groups">
+        <field name="name">Xepelin Payment / Group Growth and Marketing Supervisor</field>
+    </record>
+    <record id="group_growth_and_marketing_analyst" model="res.groups">
+        <field name="name">Xepelin Payment / Group Growth and Marketing Analyst</field>
+    </record>
+
+    <!-- OPERATIONS -->
+    <record id="group_operations_supervisor" model="res.groups">
+        <field name="name">Xepelin Payment / Group Operations Supervisor</field>
+    </record>
+    <record id="group_operations_analyst" model="res.groups">
+        <field name="name">Xepelin Payment / Group Operations Analyst</field>
+    </record>
+
+    <!-- PEOPLE AND CULTURE -->
+    <record id="group_people_and_culture_supervisor" model="res.groups">
+        <field name="name">Xepelin Payment / Group People and Culture Supervisor</field>
+    </record>
+    <record id="group_people_and_culture_analyst" model="res.groups">
+        <field name="name">Xepelin Payment / Group People and Culture Analyst</field>
+    </record>
+
+    <!-- PORTFOLIO AND RISKS -->
+    <record id="group_portfolio_and_risks_supervisor" model="res.groups">
+        <field name="name">Xepelin Payment / Group Portfolio and Risk Supervisor</field>
+    </record>
+    <record id="group_portfolio_and_risks_analyst" model="res.groups">
+        <field name="name">Xepelin Payment / Group Portfolio and Risk Analyst</field>
+    </record>
+
+    <!-- PRODUCT -->
+    <record id="group_product_supervisor" model="res.groups">
+        <field name="name">Xepelin Payment / Group Product Supervisor</field>
+    </record>
+    <record id="group_product_analyst" model="res.groups">
+        <field name="name">Xepelin Payment / Group Product Analyst</field>
+    </record>
+
+    <!-- REVENUE -->
+    <record id="group_revenue_supervisor" model="res.groups">
+        <field name="name">Xepelin Payment / Group Revenue Supervisor</field>
+    </record>
+    <record id="group_revenue_analyst" model="res.groups">
+        <field name="name">Xepelin Payment / Group Revenue Analyst</field>
+    </record>
+
+    <!-- TECH -->
+    <record id="group_tech_supervisor" model="res.groups">
+        <field name="name">Xepelin Payment / Group Tech Supervisor</field>
+    </record>
+    <record id="group_tech_analyst" model="res.groups">
+        <field name="name">Xepelin Payment / Group Tech Analyst</field>
+    </record>
+</odoo>

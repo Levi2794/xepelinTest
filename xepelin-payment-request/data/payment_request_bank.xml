@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="BANCO_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Banco de Chile</field>
+        <field name="code">1</field>
+    </record>
+    <record id="BANCO_INTERNACIONAL_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Banco Internacional</field>
+        <field name="code">9</field>
+    </record>
+    <record id="BANCO_SCOTIABANK_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Scotiabank Chile</field>
+        <field name="code">14</field>
+    </record>
+    <record id="BANCO_BCI_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">BCI</field>
+        <field name="code">16</field>
+    </record>
+    <record id="BANCO_CORPBANCA_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Banco Corpbanca</field>
+        <field name="code">27</field>
+    </record>
+    <record id="BANCO_BICE_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Banco Bice</field>
+        <field name="code">28</field>
+    </record>
+    <record id="BANCO_HSBC_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">HSBC Bank Chile</field>
+        <field name="code">31</field>
+    </record>
+    <record id="BANCO_SANTANDER_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Banco Santander Chile</field>
+        <field name="code">37</field>
+    </record>
+    <record id="BANCO_ITAU_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Itaú Corpbanca</field>
+        <field name="code">39</field>
+    </record>
+    <record id="BANCO_SECURITY_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Banco Security</field>
+        <field name="code">49</field>
+    </record>
+    <record id="BANCO_FALABELLA_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Banco Falabella</field>
+        <field name="code">51</field>
+    </record>
+    <record id="BANCO_RIPLEY_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Banco Ripley</field>
+        <field name="code">53</field>
+    </record>
+    <record id="BANCO_RABOBANK_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Rabobank Chile</field>
+        <field name="code">54</field>
+    </record>
+    <record id="BANCO_CONSORCIO_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Banco Consorcio</field>
+        <field name="code">55</field>
+    </record>
+    <record id="BANCO_PENTA_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Banco Penta</field>
+        <field name="code">56</field>
+    </record>
+    <record id="BANCO_PARIS_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Banco Paris</field>
+        <field name="code">57</field>
+    </record>
+    <record id="BANCO_BBVA_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Bbva</field>
+        <field name="code">504</field>
+    </record>
+    <record id="BANCO_BTG_CHILE" model="xepelinpaymentrequest.bank">
+        <field name="country_id" ref="base.cl"/>
+        <field name="name">Banco BTG Pactual Chile</field>
+        <field name="code">59</field>
+    </record>
+</odoo>

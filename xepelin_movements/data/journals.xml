@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- BBVA MX -->
+        <record id="xepelin_journal_spei" model="account.journal">
+            <field name="name">[502594] BBVA BANCOMER </field>
+            <field name="code">BBVA</field>
+            <field name="type">bank</field>
+            <field name="bank_statements_source">file_import</field>
+            <field name="bank_account_id" ref="xepelin_movements.xepelin_bbva_mx_502594"/>
+        </record>
+
+    </data>
+</odoo>

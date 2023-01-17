@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.xepelin_movement</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="10"/>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+                <div class="app_settings_block" data-string="Movements" data-key="xepelin_movement" string="Movements">
+                    <h2>API Connections</h2>
+                    <div class="row mt16 o_settings_container" id="back_office_connection">
+                        <div class="col-12 col-lg-6 o_setting_box" id="server_global_api">
+                            <div class="o_setting_left_pane"/>
+                            <div class="o_setting_right_pane">
+                                <span class="o_form_label">Server Global API</span>
+                                <div class="text-muted"></div>
+                                <div class="content-group">
+                                    <div class="row mt16">
+                                        <label string="URL" for="server_global_mx_url" class="col-lg-3 o_light_label"/>
+                                        <field name="server_global_mx_url"/>
+                                    </div>
+                                    <div class="row">
+                                        <label string="Token" for="server_global_mx_token" class="col-lg-3 o_light_label"/>
+                                        <field name="server_global_mx_token" password="True"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt16 o_settings_container" id="back_office_connection">
+                        <div class="col-12 col-lg-6 o_setting_box" id="back_office_api">
+                            <div class="o_setting_left_pane"/>
+                            <div class="o_setting_right_pane">
+                                <span class="o_form_label">Back Office</span>
+                                <div class="text-muted"></div>
+                                <div class="content-group">
+                                    <div class="row mt16">
+                                        <label string="URL" for="back_office_mx_url" class="col-lg-3 o_light_label"/>
+                                        <field name="back_office_mx_url"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="xepelin_movement_res_config_settings_menu_action" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_id" ref="res_config_settings_view_form"/>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'xepelin_movement'}</field>
+    </record>
+</odoo>

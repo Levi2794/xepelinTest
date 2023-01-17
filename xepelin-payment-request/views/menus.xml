@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menu app -->
+    <menuitem
+        id="xepelin_payment_request_menu_root"
+        name="Xepelin payment requests"
+        web_icon="xepelin_payment_request,static/description/icon.png"
+        sequence="0"/>
+
+    <menuitem
+        id="xepelin_payment_request_xepelin_payment_request_menu"
+        name="Xepelin payment requests"
+        parent="xepelin-payment-request.xepelin_payment_request_menu_root"
+        action="xepelin_payment_request_xepelin_payment_request_action"
+        sequence="0"/>
+</odoo>

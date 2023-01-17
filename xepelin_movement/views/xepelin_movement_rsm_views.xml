@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- xepelin.movement.rsm form view -->
+    <record id="xepelin_movement_rsm_view_form" model="ir.ui.view">
+        <field name="name">xepelin.movement.rsm.form</field>
+        <field name="model">xepelin.movement.rsm</field>
+        <field name="arch" type="xml">
+            <form string="RSM" create="0">
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="pending_merge,merged"/>
+                </header>
+                <sheet>
+                    <field name="company_id" invisible="1"/>
+                    <field name="currency_id" invisible="1"/>
+                    <div class="oe_title oe_inline">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group col="2">
+                        <group>
+                            <field name="account_number"/>
+                            <field name="date_operation"/>
+                            <field name="concept"/>
+                            <field name="reference"/>
+                            <field name="extended_reference"/>
+                            <field name="type"/>
+                            <field name="amount" widget="monetary"/>
+                            <field name="balance" widget="monetary"/>
+                        </group>
+                        <group>
+                            <field name="source"/>
+                            <field name="movement_id" readonly="1"/>
+                            <field name="bnc_id" readonly="1" attrs="{'invisible': [('bnc_id', '=', False)]}"/>
+                            <field name="spei_id" readonly="1" attrs="{'invisible': [('spei_id', '=', False)]}"/>
+                            <field name="imported" readonly="1"/>
+                            <field name="import_date" readonly="1"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- xepelin.movement.rsm tree view -->
+    <record id="xepelin_movement_rsm_view_tree" model="ir.ui.view">
+        <field name="name">xepelin.movement.rsm.tree</field>
+        <field name="model">xepelin.movement.rsm</field>
+        <field name="arch" type="xml">
+            <tree import="0" default_order='date_operation desc' js_class="import_source_movement_button">
+                <field name="name"/>
+                <field name="account_number"/>
+                <field name="date_operation"/>
+                <field name="concept"/>
+                <field name="reference"/>
+                <field name="extended_reference"/>
+                <field name="currency_id" invisible="1"/>
+                <field name="type"/>
+                <field name="source"/>
+                <field name="bnc_id" optional="hide"/>
+                <field name="spei_id" optional="hide"/>
+                <field name="amount" sum="Total" widget="monetary"/>
+                <field name="balance" widget="monetary"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="xepelin_movement_rsm_view_search" model="ir.ui.view">
+        <field name="name">xepelin.movement.rsm.search</field>
+        <field name="model">xepelin.movement.rsm</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="date_operation"/>
+                <field name="concept"/>
+                <field name="reference"/>
+                <field name="amount"/>
+                <group expand="1" string="Group By">
+                    <filter string="Type" name="type_group" context="{'group_by': 'type'}"/>
+                    <filter string="Source" name="source_group" context="{'group_by': 'source'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- xepelin.movement.rsm Action Window -->
+    <record id="xepelin_movement_rsm_action" model="ir.actions.act_window">
+        <field name="name">Movements (RSM)</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelin.movement.rsm</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create a RSM
+            </p>
+        </field>
+    </record>
+</odoo>

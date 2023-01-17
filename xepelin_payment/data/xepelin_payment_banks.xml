@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="bank_cl_chile" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Banco de Chile</field>
+        <field name="bic">1</field>
+    </record>
+    <record id="bank_cl_internacional" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Banco Internacional</field>
+        <field name="bic">9</field>
+    </record>
+    <record id="bank_cl_scotiabank" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Scotiabank Chile</field>
+        <field name="bic">14</field>
+    </record>
+    <record id="bank_cl_bci" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Bci</field>
+        <field name="bic">16</field>
+    </record>
+    <record id="bank_cl_corpbanca" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Banco CorpBanca</field>
+        <field name="bic">27</field>
+    </record>
+    <record id="bank_cl_bice" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Banco BICE</field>
+        <field name="bic">28</field>
+    </record>
+    <record id="bank_cl_hsbc" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">HSBC Bank Chile</field>
+        <field name="bic">31</field>
+    </record>
+    <record id="bank_cl_santander" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Banco Santander Chile</field>
+        <field name="bic">37</field>
+    </record>
+    <record id="bank_cl_itau" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Itaú CorpBanca</field>
+        <field name="bic">39</field>
+    </record>
+    <record id="banck_cl_security" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Banco Security</field>
+        <field name="bic">49</field>
+    </record>
+    <record id="bank_cl_falabella" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Banco Falabella</field>
+        <field name="bic">51</field>
+    </record>
+    <record id="bank_cl_ripley" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Banco Ripley</field>
+        <field name="bic">53</field>
+    </record>
+    <record id="bank_cl_rabobank" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Rabobank Chile</field>
+        <field name="bic">54</field>
+    </record>
+    <record id="bank_cl_consorcio" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Banco Consorcio</field>
+        <field name="bic">55</field>
+    </record>
+    <record id="bank_cl_penta" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Banco Penta</field>
+        <field name="bic">56</field>
+    </record>
+    <record id="bank_cl_paris" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Banco Paris</field>
+        <field name="bic">57</field>
+    </record>
+    <record id="bank_cl_bbva" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">BBVA</field>
+        <field name="bic">504</field>
+    </record>
+    <record id="bank_cl_btg" model="res.bank">
+        <field name="country" ref="base.cl"/>
+        <field name="name">Banco BTG Pactual Chile</field>
+        <field name="bic">59</field>
+    </record>
+</odoo>

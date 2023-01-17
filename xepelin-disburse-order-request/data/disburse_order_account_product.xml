@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="disburse_order_account_product_mx_direct_financing" model="xepelindisburseorder.disburse_order_account_product">
+        <field name="account_number">00741820500116157084</field>
+        <field name="product">DIRECT_FINANCING</field>
+        <field name="country" ref="base.mx"/>
+    </record>
+    <record id="disburse_order_account_product_mx_early_payment" model="xepelindisburseorder.disburse_order_account_product">
+        <field name="account_number">00741820500116157084</field>
+        <field name="product">EARLY_PAYMENT</field>
+        <field name="country" ref="base.mx"/>
+    </record>
+    <record id="disburse_order_account_product_mx_payment" model="xepelindisburseorder.disburse_order_account_product">
+        <field name="account_number">00741820500116157084</field>
+        <field name="product">CONFIRMING</field>
+        <field name="country" ref="base.mx"/>
+    </record>
+    <record id="disburse_order_account_product_cl_direct_financing" model="xepelindisburseorder.disburse_order_account_product">
+        <field name="account_number">10711457</field>
+        <field name="product">DIRECT_FINANCING</field>
+        <field name="country" ref="base.cl"/>
+    </record>
+    <record id="disburse_order_account_product_cl_early_payment" model="xepelindisburseorder.disburse_order_account_product">
+        <field name="account_number">10711465</field>
+        <field name="product">EARLY_PAYMENT</field>
+        <field name="country" ref="base.cl"/>
+    </record>
+    <record id="disburse_order_account_product_cl_payment" model="xepelindisburseorder.disburse_order_account_product">
+        <field name="account_number">10711414</field>
+        <field name="product">CONFIRMING</field>
+        <field name="country" ref="base.cl"/>
+    </record>
+</odoo>

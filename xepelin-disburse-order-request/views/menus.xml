@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menu app -->
+    <menuitem
+        id="xepelin_disburse_order_menu_root"
+        name="Xepelin disburse order requests"
+        web_icon="xepelin_disburse_order,static/description/icon.png"
+        sequence="0"/>
+
+    <menuitem
+        id="xepelin_disburse_order_xepelin_disburse_order_menu"
+        name="Xepelin disburse order requests"
+        parent="xepelin_disburse_order_menu_root"
+        action="xepelin_disburse_order_xepelin_disburse_order_action"
+        sequence="0"/>
+</odoo>

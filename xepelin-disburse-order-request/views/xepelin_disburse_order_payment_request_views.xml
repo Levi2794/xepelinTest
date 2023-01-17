@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="button_click_action" model="ir.actions.server">
+        <field name="name">Disburse order/s</field>
+        <field name="binding_model_id" ref="model_xepelindisburseorder_disburse_order" />
+        <field name="model_id" ref="model_xepelindisburseorder_disburse_order" />
+        <field name="state">code</field>
+        <field name="code">
+            if records:
+                action = model.disburse_order()
+        </field>
+    </record>
+    <!-- xepelin_disburse_order.disburse_order form view -->
+    <record id="xepelin_disburse_order_disburse_order_view_form" model="ir.ui.view">
+        <field name="name">xepelin_disburse_order.disburse_order.form</field>
+        <field name="model">xepelindisburseorder.disburse_order</field>
+        <field name="arch" type="xml">
+            <form string="Disburse order requests" create="false" edit="false">
+                <header>
+                    <button name="reject_order" string="Reject" type="object" class="oe_highlight" attrs="{'invisible': [('can_be_rejected', '=', False)]}"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="order_id" />
+                        <field name="status" />
+                        <field name="transaction_order_id" />
+                        <field name="currency" />
+                        <field name="country" />
+                        <field name="product" />
+                        <field name="segment" />
+                        <field name="lifecycle_state" />
+                        <field name="convention" />
+                        <field name="operation_date" />
+                        <field name="pay_date" />
+                        <field name="amount_to_transfer" />
+                        <field name="source_account_number" />
+                        <field name="beneficiary_account_number" />
+                        <field name="errors">
+                            <tree>
+                                <field name="id" />
+                                <field name="code" />
+                                <field name="description" />
+                                <field name="created_at" />
+                            </tree>
+                        </field>
+                        <field name="can_be_rejected" invisible="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- movement.movement tree view -->
+    <record id="xepelin_disburse_order_disburse_order_view_tree" model="ir.ui.view">
+        <field name="name">xepelin_disburse_order.disburse_order.tree</field>
+        <field name="model">xepelindisburseorder.disburse_order</field>
+        <field name="arch" type="xml">
+            <tree string="Disburse order requests">
+                <field name="order_id" />
+                <field name="transaction_order_id" />
+                <field name="currency" />
+                <field name="country" />
+                <field name="product" />
+                <field name="segment" />
+                <field name="lifecycle_state" />
+                <field name="convention" />
+                <field name="operation_date" />
+                <field name="pay_date" />
+                <field name="status" />
+                <field name="amount_to_transfer" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="disburse_order_search_view" model="ir.ui.view">
+        <field name="name">Disburse order filter view</field>
+        <field name="model">xepelindisburseorder.disburse_order</field>
+        <field name="arch" type="xml">
+            <search string="Search Operation">
+                <field string="Order id" name="order_id" />
+                <field string="Currency" name="currency" />
+                <field string="Country" name="country" />
+                <field string="Product" name="product" />
+                <field string="Segment" name="segment" />
+                <field string="Convention" name="convention" />
+                <field string="Lifecycle Stage" name="lifecycle_state" />
+                <field string="Operation date" name="operation_date"></field>
+                <group expand="1" string="Group By">
+                    <filter string="Country" name="country" context="{&#x27;group_by&#x27;:&#x27;country&#x27;}"></filter>
+                    <filter string="Currency" name="currency" context="{&#x27;group_by&#x27;:&#x27;currency&#x27;}"></filter>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- movement.movement Action Window -->
+    <record id="xepelin_disburse_order_xepelin_disburse_order_action" model="ir.actions.act_window">
+        <field name="name">Disburse order Requests</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelindisburseorder.disburse_order</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+</odoo>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="SANTANDER_ACCOUNT_CONFIG" model="xepelinpaymentrequest.config">
+        <field name="name">santander_account</field>
+        <field name="value">75211368</field>
+    </record>
+    <record id="NOTIFICATION_EMAIL_CONFIG" model="xepelinpaymentrequest.config">
+        <field name="name">notification_email</field>
+        <field name="value">operaciones@xepelin.com</field>
+    </record>
+    <record id="LOCAL_RETIREMENT_ACCOUNT_NUMBER_MX_CONFIG" model="xepelinpaymentrequest.config">
+        <field name="name">local_retirement_account_number_mx</field>
+        <field name="value">00000603759</field>
+    </record>
+    <record id="LOCAL_CLIENT_NUMBER_MX_CONFIG" model="xepelinpaymentrequest.config">
+        <field name="name">local_cliente_number_mx</field>
+        <field name="value">1000419303</field>
+    </record>
+    <record id="LOCAL_VE_POR_MAS_COMMISSION_CONFIG" model="xepelinpaymentrequest.config">
+        <field name="name">local_commission_mx</field>
+        <field name="value">0</field>
+    </record>
+    <record id="INTERNATIONAL_RETIREMENT_ACCOUNT_NUMBER_MX_CONFIG" model="xepelinpaymentrequest.config">
+        <field name="name">international_retirement_account_number_mx</field>
+        <field name="value">00000517290</field>
+    </record>
+    <record id="INTERNATIONAL_CLIENT_NUMBER_MX_CONFIG" model="xepelinpaymentrequest.config">
+        <field name="name">international_cliente_number_mx</field>
+        <field name="value">1000419303</field>
+    </record>
+    <record id="INTERNATIONAL_VE_POR_MAS_COMMISSION_CONFIG" model="xepelinpaymentrequest.config">
+        <field name="name">international_commission_mx</field>
+        <field name="value">0</field>
+    </record>
+</odoo>

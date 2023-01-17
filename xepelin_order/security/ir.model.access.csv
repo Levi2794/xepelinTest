@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_xepelin_order_discount,xepelin_order_discount,model_xepelin_order_discount,,1,1,1,0
+access_xepelin_order,xepelin_order,model_xepelin_order,,1,1,1,0
+access_search_orderinvoice_wizard,search_orderinvoice_wizard,model_search_orderinvoice_wizard,,1,1,1,1

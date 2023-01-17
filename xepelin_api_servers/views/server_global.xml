@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="xepelin_server_global_form" model="ir.ui.view">
+        <field name="name">xepelin.server.global.form</field>
+        <field name="model">server.global</field>
+        <field name="arch" type="xml">
+            <form string="Server Global">
+                <header/>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="toggle_test_environment"
+                                attrs="{'invisible': [('test_mode', '=', True)]}"
+                                class="oe_stat_button"
+                                type="object" icon="fa-play">
+                            <div class="o_stat_info o_field_widget">
+                                <span class="text-success">Production</span>
+                                <span class="o_stat_text">Environment</span>
+                            </div>
+                        </button>
+                        <button name="toggle_test_environment"
+                                attrs="{'invisible': [('test_mode', '=', False)]}"
+                                class="oe_stat_button"
+                                type="object" icon="fa-stop">
+                            <div class="o_stat_info o_field_widget">
+                                <span class="o_warning_text">Test</span>
+                                <span class="o_stat_text">Environment</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1><field name="name" placeholder="Name" required="True"/></h1>
+                        <field name="company_id" options="{'no_open':True,'no_create':True}"/>
+                    </div>
+                    <group>
+                        <group name="production" string="Production">
+                            <field name="active" invisible="1"/>
+                            <field name="test_mode" invisible="1"/>
+                            <field name="bo_host" placeholder="https://backoffice.xepelin.com" attrs="{'required':[('test_mode','=',False)]}"/>
+                            <field name="gb_host" placeholder="https://global.xepelin.com" attrs="{'required':[('test_mode','=',False)]}"/>
+                            <field name="gb_token" password="True" attrs="{'required':[('test_mode','=',False)]}"/>
+                        </group>
+                        <group name="testing" string="Testing">
+                            <field name="test_bo_host" placeholder="https://backoffice-devel.xepelin.com" attrs="{'required':[('test_mode','=',True)]}"/>
+                            <field name="test_gb_host" placeholder="https://global-devel.xepelin.com" attrs="{'required':[('test_mode','=',True)]}"/>
+                            <field name="test_gb_token" password="True" attrs="{'required':[('test_mode','=',True)]}"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="xepelin_server_global_tree" model="ir.ui.view">
+        <field name="name">xepelin.server.global.tree</field>
+        <field name="model">server.global</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="gb_host"/>
+                <field name="test_gb_host"/>
+                <field name="test_mode" widget="toggle"/>
+                <field name="company_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="xepelin_server_global_search" model="ir.ui.view">
+        <field name="name">xepelin.server.global.search</field>
+        <field name="model">server.global</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="gb_host"/>
+                <field name="test_gb_host"/>
+                <field name="company_id"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="xepelin_server_global_action" model="ir.actions.act_window">
+        <field name="name">Xepelin Server Global</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">server.global</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create a New Record
+            </p>
+        </field>
+    </record>
+
+</odoo>

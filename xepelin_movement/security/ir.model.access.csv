@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_xepelin_movement_rsm,access.xepelin.movement.rsm,xepelin_movement.model_xepelin_movement_rsm,base.group_user,1,1,1,1
+access_xepelin_movement_spei,access.xepelin.movement.spei,xepelin_movement.model_xepelin_movement_spei,base.group_user,1,1,1,1
+access_xepelin_movement_cfdi,access.xepelin.movement.cfdi,xepelin_movement.model_xepelin_movement_cfdi,base.group_user,1,1,1,1
+access_xepelin_movement_bnc,access.xepelin.movement.bnc,xepelin_movement.model_xepelin_movement_bnc,base.group_user,1,1,1,1
+access_xepelin_movement_movement,access.xepelin.movement.movement,xepelin_movement.model_xepelin_movement_movement,base.group_user,1,1,1,1
+access_xepelin_movement_order,access.xepelin.movement.order,xepelin_movement.model_xepelin_movement_order,base.group_user,1,1,1,1
+access_xepelin_movement_invoice,access.xepelin.movement.invoice,xepelin_movement.model_xepelin_movement_invoice,base.group_user,1,1,1,1
+access_xepelin_movement_upload_history,access.xepelin.movement.upload.history,xepelin_movement.model_xepelin_movement_upload_history,base.group_user,1,1,1,1
+access_xepelin_movement_payment_type,access.xepelin.movement.payment.type,xepelin_movement.model_xepelin_movement_payment_type,base.group_user,1,1,1,1
+access_xepelin_movement_tax_id_history,access.xepelin.movement.tax.id.history,xepelin_movement.model_xepelin_movement_tax_id_history,base.group_user,1,1,1,1
+access_xepelin_movement_discount,access.xepelin.movement.discount,xepelin_movement.model_xepelin_movement_discount,base.group_user,1,1,1,1
+access_xepelin_movement_mercantil_society,access.xepelin.movement.mercantil.society,xepelin_movement.model_xepelin_movement_mercantil_society,base.group_user,1,1,1,1
+
+access_import_source_movement_wizard,access.import.source.movement.wizard,xepelin_movement.model_import_source_movement_wizard,base.group_user,1,1,1,1

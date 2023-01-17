@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- xepelin.movement.spei form view -->
+    <record id="xepelin_movement_spei_view_form" model="ir.ui.view">
+        <field name="name">xepelin.movement.spei.form</field>
+        <field name="model">xepelin.movement.spei</field>
+        <field name="arch" type="xml">
+            <form string="SPEI" create="0">
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="pending_merge,merged"/>
+                    <!-- <button name="action_merge" type="object" string="Merge RSM" class='btn-primary oe_read_only' attrs="{'invisible': [('rsm_id', '=', False)]}"/> -->
+                </header>
+                <sheet>
+                    <field name="company_id" invisible="1"/>
+                    <field name="currency_id" invisible="1"/>
+                    <div class="oe_title oe_inline">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group col="4">
+                        <field name="rsm_id" attrs="{'readonly':[('rsm_id', '=', True)]}" options="{'no_create': True, 'no_create_edit':True}"/>
+                        <field name="account_number"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="payer_bank"/>
+                            <field name="payer_name"/>
+                            <field name="payer_account"/>
+                        </group>
+                        <group>
+                            <field name="beneficiary_bank"/>
+                            <field name="beneficiary_name"/>
+                            <field name="beneficiary_account"/>
+                        </group>
+                    </group>
+                    <group col="2">
+                        <group>
+                            <field name="date"/>
+                            <field name="numerical_reference"/>
+                            <field name="legend_code_concept"/>
+                            <field name="reference"/>
+                            <field name="concept"/>
+                            <field name="amount" widget="monetary"/>
+                            <field name="balance" widget="monetary"/>
+                            <field name="tracking_key"/>
+                            <field name="payment_status"/>
+                            <field name="return_reason"/>
+                        </group>
+                        <group>
+                            <field name="imported" readonly="1"/>
+                            <field name="import_date" readonly="1"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- xepelin.movement.spei tree view -->
+    <record id="xepelin_movement_spei_view_tree" model="ir.ui.view">
+        <field name="name">xepelin.movement.spei.tree</field>
+        <field name="model">xepelin.movement.spei</field>
+        <field name="arch" type="xml">
+            <tree js_class="import_source_movement_button" import="0" default_order="date desc">
+                <field name="name"/>
+                <field name="account_number"/>
+                <field name="date"/>
+                <field name="numerical_reference"/>
+                <field name="legend_code_concept"/>
+                <field name="reference"/>
+                <field name="concept"/>
+                <field name="currency_id" invisible="1"/>
+                <field name="amount" sum="Total" widget="monetary"/>
+                <field name="balance"/>
+                <field name="payer_bank"/>
+                <field name="payer_name"/>
+                <field name="payer_account"/>
+                <field name="beneficiary_bank" optional='hide'/>
+                <field name="beneficiary_name" optional='hide'/>
+                <field name="beneficiary_account" optional='hide'/>
+                <field name="tracking_key" optional='hide'/>
+                <field name="payment_status" optional='hide'/>
+                <field name="rsm_id" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <!-- xepelin.movement.spei search view -->
+    <record id="xepelin_movement_spei_view_search" model="ir.ui.view">
+        <field name="name">xepelin.movement.spei.search</field>
+        <field name="model">xepelin.movement.spei</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="date"/>
+                <field name="concept"/>
+                <field name="numerical_reference"/>
+                <field name="tracking_key"/>
+                <field name="amount"/>
+                <field name="rsm_id"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- xepelin.movement.spei Action Window -->
+    <record id="xepelin_movement_spei_action" model="ir.actions.act_window">
+        <field name="name">Interbank (SPEI)</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelin.movement.spei</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create a SPEI
+            </p>
+        </field>
+    </record>
+</odoo>

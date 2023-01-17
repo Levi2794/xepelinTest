@@ -1,0 +1,707 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* xepelin_payment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-10 15:17+0000\n"
+"PO-Revision-Date: 2022-11-10 15:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__aba_swift
+msgid "Aba/Swift"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_max_per_currency__amount
+msgid "Amount"
+msgstr "Monto"
+
+#. module: xepelin_payment
+#: model_terms:ir.ui.view,arch_db:xepelin_payment.xepelin_movement_movement_view_form
+msgid "Approve"
+msgstr "Aprobar"
+
+#. module: xepelin_payment
+#: model:ir.model.fields.selection,name:xepelin_payment.selection__xepelin_payment_payment__state__approved
+msgid "Approved"
+msgstr "Aprobada"
+
+#. module: xepelin_payment
+#: model_terms:ir.ui.view,arch_db:xepelin_payment.xepelin_payment_payment_view_search
+msgid "Approved request"
+msgstr "Solicitudes aprobadas"
+
+#. module: xepelin_payment
+#: model_terms:ir.ui.view,arch_db:xepelin_payment.xepelin_payment_payment_view_search
+msgid "Approved requests"
+msgstr "Solicitudes aprobadas"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__area
+msgid "Area"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: xepelin_payment
+#: model_terms:ir.ui.view,arch_db:xepelin_payment.xepelin_payment_payment_view_search
+msgid "Awaiting requests"
+msgstr "Solicitudes esperando aprobación"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__bank_id
+msgid "Bank"
+msgstr "Banco"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__bank_city
+msgid "Bank city"
+msgstr "Cuidad del banco"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__bank_country
+msgid "Bank country"
+msgstr "Pais del banco"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__bank_state
+msgid "Bank state"
+msgstr "Estado del banco"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__beneficiary_account_alias
+msgid "Beneficiary account alias"
+msgstr "Alias"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__beneficiary_account_number
+msgid "Beneficiary account number"
+msgstr "Numero de cuenta"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__beneficiary_address
+msgid "Beneficiary address"
+msgstr "Direccion del beneficiario"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__beneficiary_identifier
+msgid "Beneficiary identifier"
+msgstr "RUT/RFC"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__beneficiary_name
+msgid "Beneficiary name"
+msgstr "Nombre del beneficiario"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__comment
+msgid "Comment"
+msgstr "Comentario"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_config__name
+msgid "Configuration name"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_config__value
+msgid "Configuration value"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__country_id
+msgid "Country"
+msgstr "Pais"
+
+#. module: xepelin_payment
+#: model:ir.actions.server,name:xepelin_payment.action_download_file
+msgid "Crear pagos"
+msgstr "Crear archivos de dispersion bancaria"
+
+#. module: xepelin_payment
+#: model_terms:ir.actions.act_window,help:xepelin_payment.xepelin_payment_payment_action
+msgid "Create a payment request"
+msgstr "Crear una solicitud de gasto"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_config__create_uid
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_max_per_currency__create_uid
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_config__create_date
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_max_per_currency__create_date
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__creation_date
+msgid "Creation date"
+msgstr "Fecha de creación"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_max_per_currency__currency_id
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: xepelin_payment
+#: model_terms:ir.ui.view,arch_db:xepelin_payment.xepelin_payment_payment_view_search
+msgid "Date"
+msgstr "Solicitudes por fecha"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_config__display_name
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_max_per_currency__display_name
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__distribution_funds
+msgid "Distribution and funds"
+msgstr "Derecho y otras contribuciones"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__document_description
+msgid "Document description"
+msgstr "Documento (FC/BH)"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__exchange_rate_usd
+msgid "Exchange rate to usd"
+msgstr "Tipo de cambio"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,help:xepelin_payment.field_xepelin_payment_payment__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_config__id
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_max_per_currency__id
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__id
+msgid "ID"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,help:xepelin_payment.field_xepelin_payment_payment__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,help:xepelin_payment.field_xepelin_payment_payment__message_needaction
+#: model:ir.model.fields,help:xepelin_payment.field_xepelin_payment_payment__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,help:xepelin_payment.field_xepelin_payment_payment__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__invoice_date
+msgid "Invoice date"
+msgstr "Fecha de la factura"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__invoice_link
+msgid "Invoice link"
+msgstr "Link de la factura"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__is_group_approver
+msgid "Is Group Approver"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__is_payer_group
+msgid "Is Payer Group"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_config____last_update
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_max_per_currency____last_update
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_config__write_uid
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_max_per_currency__write_uid
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_config__write_date
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_max_per_currency__write_date
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model,name:xepelin_payment.model_xepelin_payment_max_per_currency
+msgid "Max per currency"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_area__name
+msgid "Name"
+msgstr "Nombre del area"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,help:xepelin_payment.field_xepelin_payment_payment__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,help:xepelin_payment.field_xepelin_payment_payment__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,help:xepelin_payment.field_xepelin_payment_payment__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields.selection,name:xepelin_payment.selection__xepelin_payment_payment__state__paid
+#: model_terms:ir.ui.view,arch_db:xepelin_payment.xepelin_movement_movement_view_form
+msgid "Paid"
+msgstr "Pagada"
+
+#. module: xepelin_payment
+#: model_terms:ir.ui.view,arch_db:xepelin_payment.xepelin_payment_payment_view_search
+msgid "Paid request"
+msgstr "Solicitudes pagadas"
+
+#. module: xepelin_payment
+#: model_terms:ir.ui.view,arch_db:xepelin_payment.xepelin_payment_payment_view_search
+msgid "Paid requests"
+msgstr "Solicitudes pagadas"
+
+#. module: xepelin_payment
+#: model:ir.model,name:xepelin_payment.model_xepelin_payment_config
+msgid "Payment Request Configuration"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.actions.act_window,name:xepelin_payment.xepelin_payment_payment_action
+msgid "Payment Requests"
+msgstr "Solicitudes de gasto"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__concept
+msgid "Payment concept"
+msgstr "Concepto"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__reference
+msgid "Payment reference"
+msgstr "Referencia"
+
+#. module: xepelin_payment
+#: model_terms:ir.ui.view,arch_db:xepelin_payment.xepelin_payment_payment_view_tree
+msgid "Payment requests"
+msgstr "Solicitudes de gasto"
+
+#. module: xepelin_payment
+#: model:ir.model,name:xepelin_payment.model_xepelin_payment_payment
+#: model:ir.ui.menu,name:xepelin_payment.xepelin_payment_payment_menu
+#: model:ir.ui.menu,name:xepelin_payment.xepelin_payment_payment_menu_root
+msgid "Payments"
+msgstr "Solicitudes de gasto"
+
+#. module: xepelin_payment
+#: model_terms:ir.ui.view,arch_db:xepelin_payment.xepelin_movement_movement_view_form
+msgid "Reject"
+msgstr "Rechazar"
+
+#. module: xepelin_payment
+#: model:ir.model.fields.selection,name:xepelin_payment.selection__xepelin_payment_payment__state__rejected
+msgid "Rejected"
+msgstr "Rechazada"
+
+#. module: xepelin_payment
+#: model_terms:ir.ui.view,arch_db:xepelin_payment.xepelin_payment_payment_view_search
+msgid "Rejected request"
+msgstr "Solicitudes rechazadas"
+
+#. module: xepelin_payment
+#: model_terms:ir.ui.view,arch_db:xepelin_payment.xepelin_payment_payment_view_search
+msgid "Rejected requests"
+msgstr "Solicitudes rechazadas"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__rent_tax_isr_amount
+msgid "Rent tax isr amount"
+msgstr "RET ISR"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__rent_tax_iva_amount
+msgid "Rent tax iva amount"
+msgstr "RET IVA"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__requesting_user
+msgid "Requesting user"
+msgstr "Requerida por el usuario"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__rights_other_contributions
+msgid "Rights and other contributions"
+msgstr "Derecho y otras contribuciones"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__state
+msgid "State"
+msgstr "Estado"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,help:xepelin_payment.field_xepelin_payment_payment__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__subtotal_amount
+msgid "Subtotal amount"
+msgstr "Subtotal"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__tax_iva_amount
+msgid "Tax amount"
+msgstr "IVA"
+
+#. module: xepelin_payment
+#: model:ir.ui.menu,name:xepelin_payment.xepelin_payment_payment_menu_action
+msgid "To Paid"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__total_amount
+msgid "Total amount"
+msgstr "Total"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__total_amount_usd
+msgid "Total amount usd"
+msgstr "Total en dolares"
+
+#. module: xepelin_payment
+#: model:ir.model.fields,help:xepelin_payment.field_xepelin_payment_payment__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields,field_description:xepelin_payment.field_xepelin_payment_payment__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: xepelin_payment
+#: model:ir.model.fields.selection,name:xepelin_payment.selection__xepelin_payment_payment__state__waiting_accounting_approval
+msgid "Waiting For Accounting Approval"
+msgstr "Esperando aprobación de contabilidad"
+
+#. module: xepelin_payment
+#: model:ir.model.fields.selection,name:xepelin_payment.selection__xepelin_payment_payment__state__waiting_area_approval
+msgid "Waiting For Area Approval"
+msgstr "Esperando aprobación del area"
+
+#. module: xepelin_payment
+#: model:ir.model.fields.selection,name:xepelin_payment.selection__xepelin_payment_payment__state__waiting_budget_approval
+msgid "Waiting For Budget Approval"
+msgstr "Esperando aprobación de presupuesto"
+
+#. module: xepelin_payment
+#: model:ir.model.fields.selection,name:xepelin_payment.selection__xepelin_payment_payment__state__waiting_treasury_approval
+msgid "Waiting For Treasury Approval"
+msgstr "Esperando aprobación de tesoreria"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_accounting
+msgid "Xepelin Payment / Group Accounting"
+msgstr "Contabilidad"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_admin
+msgid "Xepelin Payment / Group Admin"
+msgstr "Administrador del modulo"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_bizops_supervisor
+msgid "Xepelin Payment / Group Bizops Supervisor"
+msgstr "Supervisor de Bizops"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_bizops_analyst
+msgid "Xepelin Payment / Group Bizops Analyst"
+msgstr "Analista de Bizops"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_budget
+msgid "Xepelin Payment / Group Budget"
+msgstr "Presupuesto"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_collection_and_portfolio_supervisor
+msgid "Xepelin Payment / Group Collection and Portfolio Supervisor"
+msgstr "Supervidor de Cobranza/Portafolio"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_collection_and_portfolio_analyst
+msgid "Xepelin Payment / Group Collection and Portfolio Analyst"
+msgstr "Analista de Cobranza/Portafolio"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_data_supervisor
+msgid "Xepelin Payment / Group Data Supervisor"
+msgstr "Supervisor de Data"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_data_analyst
+msgid "Xepelin Payment / Group Data Analyst"
+msgstr "Analista de Data"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_debt_capital_markets_and_structured_finance_supervisor
+msgid ""
+"Xepelin Payment / Group Debt capital markets and Structured finance "
+"Supervisor"
+msgstr "Supervisor de Debt capital markets & Structured finance"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_debt_capital_markets_and_structured_finance_analyst
+msgid ""
+"Xepelin Payment / Group Debt capital markets and Structured finance Analyst"
+msgstr "Analista de Debt capital markets & Structured finance"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_finances_and_accounting_supervisor
+msgid "Xepelin Payment / Group Finances and Accounting Supervisor"
+msgstr "Supervisor  de Finanzas/Contabilidad"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_finances_and_accounting_analyst
+msgid "Xepelin Payment / Group Finances and Accounting Analyst"
+msgstr "Analista de  Finanzas/Contabilidad"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_growth_and_marketing_supervisor
+msgid "Xepelin Payment / Group Growth and Marketing Supervisor"
+msgstr "Supervisor Growth/Marketing"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_growth_and_marketing_analyst
+msgid "Xepelin Payment / Group Growth and Marketing Analyst"
+msgstr "Analista Growth/Marketing"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_legal_supervisor
+msgid "Xepelin Payment / Group Legal Supervisor"
+msgstr "Supervisor de Legal"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_legal_analyst
+msgid "Xepelin Payment / Group Legal Analyst"
+msgstr "Analista de Legal"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_operations_supervisor
+msgid "Xepelin Payment / Group Operations Supervisor"
+msgstr "Supervisor de Operaciones"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_operations_analyst
+msgid "Xepelin Payment / Group Operations Analyst"
+msgstr "Analista de Operaciones"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_people_and_culture_supervisor
+msgid "Xepelin Payment / Group People and Culture Supervisor"
+msgstr "Supervisor de People & Culture"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_people_and_culture_analyst
+msgid "Xepelin Payment / Group People and Culture Analyst"
+msgstr "Analista de People & Culture"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_portfolio_and_risks_supervisor
+msgid "Xepelin Payment / Group Portfolio and Risk Supervisor"
+msgstr "Supervisor de Portfolio & Risk"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_portfolio_and_risks_analyst
+msgid "Xepelin Payment / Group Portfolio and Risk Analyst"
+msgstr "Analista de Portfolio & Risk"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_product_supervisor
+msgid "Xepelin Payment / Group Product Supervisor"
+msgstr "Supervisor de Producto"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_product_analyst
+msgid "Xepelin Payment / Group Product Analyst"
+msgstr "Analista de Producto"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_revenue_supervisor
+msgid "Xepelin Payment / Group Revenue Supervisor"
+msgstr "Supervisor de Revenue"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_revenue_analyst
+msgid "Xepelin Payment / Group Revenue Analyst"
+msgstr "Analista de Revenue"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_tech_supervisor
+msgid "Xepelin Payment / Group Tech Supervisor"
+msgstr "Supervisor de Tech"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_tech_analyst
+msgid "Xepelin Payment / Group Tech Analyst"
+msgstr "Analista de Tech"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_treasury_analyst
+msgid "Xepelin Payment / Group Treasury Analyst"
+msgstr "Analista de tesoreria"
+
+#. module: xepelin_payment
+#: model:res.groups,name:xepelin_payment.group_treasury_supervisor
+msgid "Xepelin Payment / Group Treasury Supervisor"
+msgstr "Supervisor de tesoreria"
+
+#. module: xepelin_payment
+#: model_terms:ir.ui.view,arch_db:xepelin_payment.xepelin_movement_movement_view_form
+msgid "payment_question"
+msgstr "¿La solicitud fue pagada?"

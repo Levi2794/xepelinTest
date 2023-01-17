@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Payment -->
+    <!-- Menu app -->
+    <menuitem
+        id="xepelin_payment_payment_menu_root"
+        name="Payments"
+        web_icon="xepelin_payment,static/description/icon.png"
+        action="xepelin_payment_payment_action"
+        sequence="0"/>
+
+</odoo>

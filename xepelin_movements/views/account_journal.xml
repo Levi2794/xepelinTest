@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<odoo>
+    
+    <record id="account_journal_kanban_inherit_xepelin" model="ir.ui.view">
+        <field name="name">account.journal.kanban.inherit.xepelin</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.account_journal_dashboard_kanban_view"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//div[@id='dashboard_bank_cash_right']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>

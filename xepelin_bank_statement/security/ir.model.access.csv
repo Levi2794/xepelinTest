@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_xepelin_bank_statement,access.xepelin.bank.statement,xepelin_bank_statement.model_xepelin_bank_statement,base.group_user,1,1,1,1
+access_xepelin_bank_statement_upload_history,access.xepelin.bank.statement.upload.history,xepelin_bank_statement.model_xepelin_bank_statement_upload_history,base.group_user,1,1,1,1
+access_xepelin_bank_statement_order,access.xepelin.bank.statement.order,xepelin_bank_statement.model_xepelin_bank_statement_order,base.group_user,1,1,1,1
+access_xepelin_bank_statement_invoice,access.xepelin.bank.statement.invoice,xepelin_bank_statement.model_xepelin_bank_statement_invoice,base.group_user,1,1,1,1
+access_import_bank_statement_wizard,access.import.bank.statement.wizard,xepelin_bank_statement.model_import_bank_statement_wizard,base.group_user,1,1,1,1
+access_xepelin_bank_statement_discount,access.xepelin.bank.statement.discount,xepelin_bank_statement.model_xepelin_bank_statement_discount,base.group_user,1,1,1,1
+access_xepelin_bank_statement_type,access.xepelin.bank.statement.type,xepelin_bank_statement.model_xepelin_bank_statement_type,base.group_user,1,1,1,1
+access_xepelin_bank_bci,access.xepelin.bank.bci,xepelin_bank_statement.model_xepelin_bank_bci,base.group_user,1,1,1,1
+access_xepelin_bank_santander,access.xepelin.bank.santander,xepelin_bank_statement.model_xepelin_bank_santander,base.group_user,1,1,1,1

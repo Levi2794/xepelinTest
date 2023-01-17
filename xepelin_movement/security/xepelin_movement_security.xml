@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- xepelin.movement.rsm -->
+    <record id="xepelin_movement_rsm_rule" model="ir.rule">
+        <field name="name">Xepelin Movement RSM - multi-company</field>
+        <field name="model_id" ref="model_xepelin_movement_rsm"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <!-- xepelin.movement.bnc -->
+    <record id="xepelin_movement_bnc_rule" model="ir.rule">
+        <field name="name">Xepelin Movement BNC - multi-company</field>
+        <field name="model_id" ref="model_xepelin_movement_bnc"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <!-- xepelin.movement.spei -->
+    <record id="xepelin_movement_spei_rule" model="ir.rule">
+        <field name="name">Xepelin Movement SPEI - multi-company</field>
+        <field name="model_id" ref="model_xepelin_movement_spei"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <!-- xepelin.movement.cfdi -->
+    <record id="xepelin_movement_cfdi_rule" model="ir.rule">
+        <field name="name">Xepelin Movement CFDI - multi-company</field>
+        <field name="model_id" ref="model_xepelin_movement_cfdi"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <!-- xepelin.movement.movement -->
+    <record id="xepelin_movement_movement_rule" model="ir.rule">
+        <field name="name">Xepelin Movement Movement - multi-company</field>
+        <field name="model_id" ref="model_xepelin_movement_movement"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <!-- xepelin.movement.order -->
+    <record id="xepelin_movement_order_rule" model="ir.rule">
+        <field name="name">Xepelin Movement Order - multi-company</field>
+        <field name="model_id" ref="model_xepelin_movement_order"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <!-- xepelin.movement.invoice -->
+    <record id="xepelin_movement_invoice_rule" model="ir.rule">
+        <field name="name">Xepelin Movement Invoice - multi-company</field>
+        <field name="model_id" ref="model_xepelin_movement_invoice"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <!-- xepelin.movement.payment.type -->
+    <record id="xepelin_movement_payment_type_rule" model="ir.rule">
+        <field name="name">Xepelin Movement Payment Type - multi-company</field>
+        <field name="model_id" ref="model_xepelin_movement_payment_type"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <!-- xepelin.movement.upload.history -->
+    <record id="xepelin_movement_upload_history_rule" model="ir.rule">
+        <field name="name">Xepelin Movement Upload History - multi-company</field>
+        <field name="model_id" ref="model_xepelin_movement_upload_history"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <!-- xepelin.movement.tax.id.history -->
+    <record id="xepelin_movement_tax_id_history_rule" model="ir.rule">
+        <field name="name">Xepelin Movement Tax Id History - multi-company</field>
+        <field name="model_id" ref="model_xepelin_movement_tax_id_history"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <!-- xepelin.movement.discount -->
+    <record id="xepelin_movement_discount_rule" model="ir.rule">
+        <field name="name">Xepelin Movement Discount - multi-company</field>
+        <field name="model_id" ref="model_xepelin_movement_discount"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <!-- xepelin.movement.mercantil.society -->
+    <record id="xepelin_movement_mercantil_society_rule" model="ir.rule">
+        <field name="name">Xepelin Movement Mercantil Society - multi-company</field>
+        <field name="model_id" ref="model_xepelin_movement_mercantil_society"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+</odoo>

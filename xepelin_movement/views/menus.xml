@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Movement -->
+    <!-- Menu app -->
+    <menuitem
+        id="xepelin_movement_movement_menu_root"
+        name="Movements"
+        web_icon="xepelin_movement,static/description/icon.png"
+        sequence="0"/>
+
+    <!-- Menu top-->
+    <menuitem
+        id="xepelin_movement_movement_menu"
+        name="Movements"
+        parent="xepelin_movement.xepelin_movement_movement_menu_root"
+        sequence="0"/>
+
+    <!-- Menu action -->
+    <menuitem
+        id="xepelin_movement_movement_menu_action"
+        name="To reconcile"
+        parent="xepelin_movement.xepelin_movement_movement_menu"
+        action="xepelin_movement_movement_action"
+        sequence="4"/>
+
+    <!-- Order -->
+    <!-- menu top -->
+    <menuitem
+        id="xepelin_movement_order_menu"
+        name="Orders"
+        parent="xepelin_movement.xepelin_movement_movement_menu_root"
+        sequence="1"/>
+
+    <!-- Settings-->
+    <!-- menu top -->
+        <menuitem
+        id="xepelin_movement_settings_menu"
+        name="Settings"
+        parent="xepelin_movement.xepelin_movement_movement_menu_root"
+        sequence="2"/>
+
+    <!-- Order -->
+    <!-- Menu action -->
+    <menuitem
+        id="xepelin_movement_order_menu_action"
+        name="Orders"
+        parent="xepelin_movement.xepelin_movement_order_menu"
+        action="xepelin_movement_order_action"
+        sequence="0"/>
+
+        <!-- Invoice -->
+    <menuitem
+        id="xepelin_movement_invoice_menu_action"
+        name="Invoices"
+        parent="xepelin_movement.xepelin_movement_order_menu"
+        action="xepelin_movement_invoice_action"
+        sequence="1"/>
+
+    <!-- RSM -->
+    <!-- Menu action -->
+    <menuitem
+        id="xepelin_movement_rsm_menu_action"
+        name="Movements (RSM)"
+        parent="xepelin_movement.xepelin_movement_movement_menu"
+        action="xepelin_movement_rsm_action"
+        sequence="0"/>
+
+
+    <!-- SPEI -->
+    <!-- Menu action -->
+    <menuitem
+        id="xepelin_movement_spei_menu_action"
+        name="Interbank (SPEI)"
+        parent="xepelin_movement.xepelin_movement_movement_menu"
+        action="xepelin_movement_spei_action"
+        sequence="1"/>
+
+    <!-- CFDI -->
+    <!-- Menu action -->
+    <menuitem
+        id="xepelin_movement_cfdi_menu_action"
+        name="Historical SPEI (CFDI)"
+        parent="xepelin_movement.xepelin_movement_movement_menu"
+        action="xepelin_movement_cfdi_action"
+        sequence="2"/>
+
+    <!-- BNC -->
+    <!-- Menu action -->
+    <menuitem
+        id="xepelin_movement_bnc_menu_action"
+        name="Same bank (BNC)"
+        parent="xepelin_movement.xepelin_movement_movement_menu"
+        action="xepelin_movement_bnc_action"
+        sequence="3"/>
+
+    <!-- Upload history -->
+    <!-- Menu action -->
+    <menuitem
+        id="xepelin_movement_upload_history_menu_action"
+        name="Upload History"
+        parent="xepelin_movement.xepelin_movement_settings_menu"
+        action="xepelin_movement_upload_history_action"
+        sequence="0"/>
+
+    <!-- Payment type -->
+    <!-- Menu action -->
+    <menuitem
+    id="xepelin_movement_pyment_type_menu_action"
+    name="Payment type"
+    parent="xepelin_movement.xepelin_movement_settings_menu"
+    action="xepelin_movement_payment_type_action"
+    sequence="1"/>
+
+    <!-- Tax ID History -->
+    <!-- Menu action -->
+    <menuitem
+    id="xepelin_movement_tax_id_history_menu_action"
+    name="Tax ID History"
+    parent="xepelin_movement.xepelin_movement_settings_menu"
+    action="xepelin_movement_tax_id_history_action"
+    sequence="2"/>
+
+    <!-- Discount -->
+    <!-- Menu action -->
+    <menuitem
+    id="xepelin_movement_discount_menu_action"
+    name="Discount"
+    parent="xepelin_movement.xepelin_movement_order_menu"
+    action="xepelin_movement_discount_action"
+    sequence="3"/>
+
+    <!-- Mercantil society -->
+    <!-- Menu action -->
+    <menuitem
+    id="xepelin_movement_mercantil_society_menu_action"
+    name="Mercantil Society"
+    parent="xepelin_movement.xepelin_movement_settings_menu"
+    action="xepelin_movement_mercantil_society_action"
+    sequence="3"/>
+</odoo>

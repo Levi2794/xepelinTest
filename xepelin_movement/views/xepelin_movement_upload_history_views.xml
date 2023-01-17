@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- xepelin.movement.upload.history form view -->
+    <record id="xepelin_movement_upload_history_view_form" model="ir.ui.view">
+        <field name="name">xepelin.movement.upload.history.form</field>
+        <field name="model">xepelin.movement.upload.history</field>
+        <field name="arch" type="xml">
+            <form edit="0" create="0">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="company_id" invisible="1"/>
+                            <field name="name" readonly="1"/>
+                            <field name="date" readonly="1"/>
+                            <field name="type" readonly="1"/>
+                            <field name="file" readonly="1" filename="filename" widget="binary"/>
+                            <field name="total"/>
+                            <field name="imported"/>
+                            <field name="omitted"/>
+                            <field name="create_uid"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <!-- xepelin.movement.upload.history tree view -->
+    <record id="xepelin_movement_upload_history_view_tree" model="ir.ui.view">
+        <field name="name">xepelin.movement.upload.history.tree</field>
+        <field name="model">xepelin.movement.upload.history</field>
+        <field name="arch" type="xml">
+            <tree string="Upload History" import="0" create="0">
+                <field name="name" decoration-bf="1"/>
+                <field name="date"/>
+                <field name="type"/>
+                <field name="file" widget="binary" filename="filename"/>
+                <field name="total"/>
+                <field name="imported"/>
+                <field name="omitted"/>
+                <field name="create_uid"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- xepelin.movement.upload.history Action Window -->
+    <record id="xepelin_movement_upload_history_action" model="ir.actions.act_window">
+        <field name="name">Upload History</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelin.movement.upload.history</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Upload history
+            </p>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="xepelin_job_queue_form" model="ir.ui.view">
+        <field name="name">xepelin.job.queue.form</field>
+        <field name="model">xepelin.job.queue</field>
+        <field name="arch" type="xml">
+            <form string="Job Queue">
+                <header>
+                    <button name="action_prepared" type="object" string="Prepared" attrs="{'invisible':[('status','!=','draft')]}"/>
+                    <button name="action_cancel" type="object" string="Cancel" attrs="{'invisible':[('status','not in',['prepared','running'])]}"/>
+                    <field name="status" widget="statusbar" statusbar_visible="draft,prepared,running,finished"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name" placeholder="Name" required="True" attrs="{'readonly':[('status','!=','draft')]}"/></h1>
+                        <field name="company_id" options="{'no_open':True,'no_create':True}" attrs="{'readonly':[('status','!=','draft')]}"/>
+                    </div>
+                    <group>
+                        <field name="create_date" attrs="{'invisible':[('create_date','=',False)]}"/>
+                        <field name="code" attrs="{'readonly':[('status','!=','draft')]}"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="xepelin_job_queue_tree" model="ir.ui.view">
+        <field name="name">xepelin.job.queue.tree</field>
+        <field name="model">xepelin.job.queue</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="create_date"/>
+                <field name="name"/>
+                <field name="status"/>
+                <field name="company_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="xepelin_job_queue_action" model="ir.actions.act_window">
+        <field name="name">Job Queue</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelin.job.queue</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create a New Task
+            </p>
+        </field>
+    </record>
+
+</odoo>

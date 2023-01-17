@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="xepelin_order_discount_view_form" model="ir.ui.view">
+        <field name="name">xepelin.order.discount.form</field>
+        <field name="model">xepelin.order.discount</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="reason"/>
+                            <field name="external_id"/>
+                            <field name="order_id" widget="many2one" options="{'no_create_edit': True, 'no_quick_create': True}"/>
+                            <field name="amount" widget="monetary"/>
+                        </group>
+                        <group>
+                            <field name="company_id" />
+                            <field name="currency_id" />
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="xepelin_order_discount_view_tree" model="ir.ui.view">
+        <field name="name">xepelin.order.discount.tree</field>
+        <field name="model">xepelin.order.discount</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="external_id"/>
+                <field name="reason"/>
+                <field name="order_id" />
+                <field name="amount" widget="monetary"/>
+                <field name="company_id" optional="hide"/>
+                <field name="currency_id" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="xepelin_order_discount_view_search" model="ir.ui.view">
+        <field name="name">xepelin.order.discount.search</field>
+        <field name="model">xepelin.order.discount</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="reason"/>
+                <field name="external_id"/>
+                <field name="order_id" />
+                <group expand="1" string="Group By">
+                    <filter string="Reason" name="reason_group" context="{'group_by': 'reason'}"/>
+                    <filter string="Order" name="order_group" context="{'group_by': 'order_id'}"/>
+                    <filter string="Company" name="company_group" context="{'group_by': 'company_id'}"/>
+                    <filter string="Currency" name="currency_group" context="{'group_by': 'currency_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="xepelin_order_discount_action" model="ir.actions.act_window">
+        <field name="name">Order Discounts</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelin.order.discount</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create a Order Discount
+            </p>
+        </field>
+    </record>
+</odoo>

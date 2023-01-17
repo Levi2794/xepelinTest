@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_budget" model="res.groups">
+        <field name="name">Xepelin payment request / Group budget</field>
+    </record>
+    <record id="group_accounting" model="res.groups">
+        <field name="name">Xepelin payment request / Group accounting</field>
+    </record>
+    <record id="group_treasury_analyst" model="res.groups">
+        <field name="name">Xepelin payment request / Group treasury analyst</field>
+    </record>
+    <record id="group_treasury_supervisor" model="res.groups">
+        <field name="name">Xepelin payment request / Group treasury supervisor</field>
+    </record>
+</odoo>

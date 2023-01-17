@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <!-- xepelin.bank.santander tree view -->
+    <record id="xepelin_bank_santander_view_tree" model="ir.ui.view">
+        <field name="name">xepelin.bank.santander.tree</field>
+        <field name="model">xepelin.bank.santander</field>
+        <field name="arch" type="xml">
+            <tree import="0" js_class="import_bank_statement_button" multi_edit="1">
+                <field name="name" readonly="1"/>
+                <field name="date" readonly="1" widget="date"/>
+                <field name="origin_rut" readonly="1"/>
+                <field name="movement_description" readonly="1"/>
+                <field name="amount" sum="Total" readonly="1"/>
+                <field name="currency_id" readonly="1"/>
+                <field name="balance" readonly="1" optional="hide"/>
+                <field name="bank_branch" readonly="1"/>
+                <field name="type"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- xepelin.bank.santander Action Window -->
+    <record id="xepelin_bank_santander_action" model="ir.actions.act_window">
+        <field name="name">Santander Bank</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelin.bank.santander</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create a Santander movement
+            </p>
+        </field>
+    </record>
+</odoo>

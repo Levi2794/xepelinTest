@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <record id="account_bank_statement_import_xlsx" model="ir.ui.view">
+        <field name="name">Upload Bank Statements XLSX</field>
+        <field name="model">account.bank.statement.import</field>
+        <field name="inherit_id" ref="account_bank_statement_import.account_bank_statement_import_view"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//ul[@id='statement_format']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//ul[@id='statement_format']" position="after">
+                <ul id="xepelin_statement_format">
+                    <li>Spreadsheet (XLSX)</li>
+                </ul>
+                <group name="xepelin_settings">
+                    <group>
+                        <field name="xepelin_ready" invisible="1"/>
+                        <field name="xepelin_source" required="1"/>
+                    </group>
+                </group>
+            </xpath>
+
+            <xpath expr="//button[@name='import_file']" position="attributes">
+                <attribute name="attrs">{'invisible':[('xepelin_ready','=',False)]}</attribute>
+            </xpath>
+            <xpath expr="//button[@name='import_file']" position="after">
+                <button name="import_file" string="Upload" type="object" class="btn-primary" data-hotkey="q" attrs="{'invisible':[('xepelin_ready','=',True)]}" disabled="1"/>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>

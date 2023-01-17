@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- movement.order form view -->
+    <record id="xepelin_movement_order_view_form" model="ir.ui.view">
+        <field name="name">xepelin.movement.order.form</field>
+        <field name="model">xepelin.movement.order</field>
+        <field name="arch" type="xml">
+            <form string="Order" create="false">
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="to_reconcile,reconciled"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Reconciled" attrs="{'invisible': [('state', '!=', 'reconciled')]}"/>
+                    <div class="oe_title oe_inline">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <label for="number"/>
+                        <div class="o_row">
+                            <field name="number" readonly="1"/>
+                            <button name="bo_order_link" icon="fa-eye" type="object" string="BO"/>
+                        </div>
+                        <field name="order_type" readonly="1"/>
+                        <field name="business_name" readonly="1"/>
+                        <field name="business_identifier" readonly="1"/>
+                        <field name="currency_id" invisible="1"/>
+                        <field name="count_invoices"/>
+                        <field name="selected" widget="boolean_toggle"/>
+                    </group>
+                    <group  attrs="{'invisible': [('order_type', '!=', 'CONFIRMING')]}">
+                        <field name="has_payer_contribution" readonly="1"/>
+                        <field name="interest" readonly="1"/>
+                        <field name="operation_cost" readonly="1"/>
+                        <field name="is_same_total_payments_interest" invisible="1"/>
+                        <field name="total_payments_interest" decoration-success="is_same_total_payments_interest and not has_payer_contribution" readonly="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Invoices" name="invoices_lines">
+                            <field name="invoice_ids">
+                                <tree editable="top" limit="50" delete="0" create="0" multi_edit="1" default_order="expiration_date desc">
+                                    <field name="selected" attrs="{'readonly':['|', ('status','not in',('ACTIVE','DEFAULT','DELINQUENT','HARD_COLLECTION','HARD_DELINQUENCY','SOFT_DELINQUENCY')), ('state','==','reconciled')]}" widget="boolean_toggle"/>
+                                    <field name="folio" readonly="1"/>
+                                    <field name="total_capital_debt" decoration-success="is_same_amount" readonly="1"/>
+                                    <field name="debt_interest_at_date" decoration-success="is_same_amount" readonly="1"/>
+                                    <field name="total_debt" decoration-success="is_same_amount" readonly="1"/>
+                                    <field name="currency_id" readonly="1"/>
+                                    <field name="invoice_stake_holder_identifier" decoration-success="is_same_payer_identifier" readonly="1"/>
+                                    <field name="is_same_date"  decoration-success="is_same_date" readonly="1" invisible="1"/>
+                                    <field name="is_same_amount"  decoration-success="is_same_date" readonly="1" invisible="1"/>
+                                    <field name="is_same_payer_identifier"  decoration-success="is_same_date" readonly="1" invisible="1"/>
+                                    <field name="expiration_date"  decoration-success="is_same_date" readonly="1"/>
+                                    <field name="status" decoration-success="status in ('ACTIVE','DEFAULT','DELINQUENT','HARD_COLLECTION','HARD_DELINQUENCY','SOFT_DELINQUENCY')"
+                                           decoration-danger="status not in ('ACTIVE','DEFAULT','DELINQUENT','HARD_COLLECTION','HARD_DELINQUENCY','SOFT_DELINQUENCY')" readonly="1" />
+                                    <field name="state"/>
+                                </tree>
+                            </field>
+                            <div>
+                                <group col="6" class="mt-2 mt-md-0">
+                                    <group class="oe_subtotal_footer oe_right" colspan="2" name="order_total">
+                                        <div class="o_td_label"></div>
+                                        <field name="total_movements" widget="monetary" style="font-size:1.3em"/>
+                                        <field name="total_selected_debt" widget="monetary" invisible="not context.get('movement_id',False)"/>
+                                        <field name="total_selected_capital" widget="monetary" invisible="not context.get('movement_id',False)"/>
+                                        <field name="total_selected_interest" widget="monetary" invisible="not context.get('movement_id',False)"/>
+                                        <div class="o_td_label"></div>
+                                        <field name="total_reconcile" invisible="not context.get('movement_id',False)" class="oe_subtotal_footer_separator"/>
+                                        <field name="capital_reconcile" invisible="not context.get('movement_id',False)"/>
+                                        <field name="interest_reconcile" invisible="not context.get('movement_id',False)"/>
+
+                                        <div></div>
+                                        <button name="button_reconciled" class="oe_highlight oe_right" string="Reconcile" type="object" help="Move Order to Reconciled state"
+                                            invisible="not context.get('movement_id',False)"/>
+                                    </group>
+                                    <div class="oe_clear"/>
+                                </group>
+                            </div>
+                        </page>
+                        <page name="order_details" string="Details">
+                            <group>
+                                <field name="final_amount"/>
+                                <field name="transfer"/>
+                                <field name="retention"/>
+                                <field name="retention_pct"/>
+                                <field name="advance_payment"/>
+                                <field name="interest"/>
+                                <field name="base_rate"/>
+                                <field name="operation_cost"/>
+                                <field name="issued_date"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- movement.order tree view -->
+    <record id="xepelin_movement_order_view_tree" model="ir.ui.view">
+        <field name="name">xepelin.movement.order.view.tree</field>
+        <field name="model">xepelin.movement.order</field>
+        <field name="arch" type="xml">
+            <tree string="Orders" create="false">
+                <field name="name"/>
+                <field name="number"></field>
+                <field name="order_type" readonly="1"/>
+                <button name="bo_order_link" icon="fa-eye" type="object" string="BO"/>
+                <field name="business_name"/>
+                <field name="business_identifier"/>
+                <field name="final_amount"/>
+                <field name="state"/>
+                <field name="count_invoices"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- xepelin.movement.order search view -->
+    <record id="xepelin_movement_order_view_search" model="ir.ui.view">
+        <field name="name">xepelin.movement.order.search</field>
+        <field name="model">xepelin.movement.order</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="number"/>
+                <field name="business_name"/>
+                <field name="business_identifier"/>
+                <filter string="To reconcile" name="to_reconcile" domain="[('state', '=', 'to_reconcile')]"/>
+                <filter string="Reconciled" name="reconciled" domain="[('state', '=', 'reconciled')]"/>
+                <group expand="1" string="Group By">
+                    <filter string="State" name="state_group" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="xepelin_movement_order_action" model="ir.actions.act_window">
+        <field name="name">Orders</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xepelin.movement.order</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="context">{'search_default_state_group': 1}</field> -->
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                    Create an order
+            </p>
+        </field>
+    </record>
+</odoo>
